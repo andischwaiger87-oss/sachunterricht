@@ -4,10 +4,13 @@
   /* Modern Kid-Friendly Palette */
   --color-bg: #f4f9f9;
   --color-surface: #ffffff;
-  --color-primary: #3dccc7; /* Fresh Mint */
+  --color-primary: #3dccc7;
+  /* Fresh Mint */
   --color-primary-dark: #2bb3ae;
-  --color-secondary: #ff6b6b; /* Soft Playful Red */
-  --color-accent: #ffe66d; /* Sunny Yellow */
+  --color-secondary: #ff6b6b;
+  /* Soft Playful Red */
+  --color-accent: #ffe66d;
+  /* Sunny Yellow */
   --color-text: #2c3e50;
   --color-text-light: #546a7b;
   --color-success: #6bcf63;
@@ -42,7 +45,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
   color: var(--color-text);
   letter-spacing: -0.5px;
@@ -57,10 +62,12 @@ button {
 
 /* Utilities */
 .container {
-  max-width: 600px; /* Mobile First optimal width */
+  max-width: 600px;
+  /* Mobile First optimal width */
   margin: 0 auto;
   padding: 20px;
-  padding-bottom: 80px; /* Space for specific mobile nav if needed */
+  padding-bottom: 80px;
+  /* Space for specific mobile nav if needed */
 }
 
 .card {
@@ -106,10 +113,28 @@ button {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in {
   animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Image Zoom Handling */
+.react-transform-component {
+  width: 100% !important;
+  height: auto !important;
+  cursor: grab;
+}
+
+.react-transform-component:active {
+  cursor: grabbing;
 }

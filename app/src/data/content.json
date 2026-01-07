@@ -40,6 +40,7 @@
         "id": "stromkreis",
         "title": "Der Stromkreis",
         "image": "20260107_173943.jpg",
+        "rotate": 90,
         "importantText": [
             "Für Versuche verwendet nur Strom aus einer Batterie, NIE aus der Steckdose!",
             "Materialien, die den Strom leiten, werden Leiter genannt.",
@@ -89,6 +90,7 @@
         "id": "stromleitungen",
         "title": "Stromleitungen & Denken",
         "image": "20260107_173955.jpg",
+        "rotate": 90,
         "importantText": [
             "Die Lampe leuchtet, weil elektrischer Strom fließt.",
             "Die Lampe leuchtet, weil der Schalter den Stromkreis schließt.",
