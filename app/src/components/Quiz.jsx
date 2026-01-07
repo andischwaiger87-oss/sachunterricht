@@ -251,6 +251,9 @@ const Quiz = ({ questions }) => {
 // Sub-component for classification table
 const TableClassify = ({ question, onComplete, isFinished }) => {
     // items: [{name: "X", category: "Leiter"}]
+    // Dynamically extract unique categories
+    const categories = Array.from(new Set(question.items.map(i => i.category))).sort()
+
     // State: { "Radiergummi": "Nichtleiter" }
     const [answers, setAnswers] = useState({})
 
@@ -289,31 +292,25 @@ const TableClassify = ({ question, onComplete, isFinished }) => {
                             background: '#fcfcfc'
                         }}>
                             <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>{item.name}</div>
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-                                <button
-                                    onClick={() => handleSelect(item.name, 'Leiter')}
-                                    style={{
-                                        padding: '8px',
-                                        borderRadius: '20px',
-                                        background: currentAns === 'Leiter' ? 'var(--color-primary)' : '#e0e0e0',
-                                        color: currentAns === 'Leiter' ? 'white' : '#555',
-                                        fontSize: '0.9rem'
-                                    }}
-                                >
-                                    Leiter
-                                </button>
-                                <button
-                                    onClick={() => handleSelect(item.name, 'Nichtleiter')}
-                                    style={{
-                                        padding: '8px',
-                                        borderRadius: '20px',
-                                        background: currentAns === 'Nichtleiter' ? 'var(--color-secondary)' : '#e0e0e0',
-                                        color: currentAns === 'Nichtleiter' ? 'white' : '#555',
-                                        fontSize: '0.9rem'
-                                    }}
-                                >
-                                    Nichtleiter
-                                </button>
+                            <div style={{ display: 'grid', gridTemplateColumns: `repeat(${categories.length}, 1fr)`, gap: '10px' }}>
+                                {categories.map(cat => (
+                                    <button
+                                        key={cat}
+                                        onClick={() => handleSelect(item.name, cat)}
+                                        style={{
+                                            padding: '8px',
+                                            borderRadius: '20px',
+                                            background: currentAns === cat ? 'var(--color-primary)' : '#e0e0e0',
+                                            color: currentAns === cat ? 'white' : '#555',
+                                            fontSize: '0.9rem',
+                                            border: 'none',
+                                            cursor: 'pointer',
+                                            transition: 'all 0.2s'
+                                        }}
+                                    >
+                                        {cat}
+                                    </button>
+                                ))}
                             </div>
                         </div>
                     )

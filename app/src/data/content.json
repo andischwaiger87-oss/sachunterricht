@@ -65,7 +65,9 @@
                     "Batterie",
                     "Lämpchen",
                     "Kabel",
-                    "Fassung"
+                    "Fassung",
+                    "Wasserhahn",
+                    "Schere"
                 ],
                 "correctIndices": [
                     0,
@@ -121,16 +123,39 @@
         "quiz": [
             {
                 "type": "checklist",
-                "question": "Wann leuchtet die Lampe?",
+                "question": "Wann leuchtet die Lampe? (Wähle die RICHTIGEN aus)",
                 "options": [
                     "Wenn der Schalter den Stromkreis schließt.",
                     "Wenn elektrischer Strom fließt.",
-                    "Wenn der Stromkreis unterbrochen ist."
+                    "Wenn der Stromkreis unterbrochen ist.",
+                    "Wenn die Batterie leer ist."
                 ],
                 "correctIndices": [
                     0,
                     1
                 ]
+            },
+            {
+                "question": "Was macht der Schalter?",
+                "options": [
+                    "Er erzeugt Strom",
+                    "Er schließt oder unterbricht den Stromkreis",
+                    "Er macht die Lampe kaputt"
+                ],
+                "correct": 1
+            },
+            {
+                "type": "fill_in",
+                "question": "Was muss fließen, damit die Lampe leuchtet?",
+                "answer": "STROM"
+            },
+            {
+                "question": "Ist ein geschlossener Stromkreis notwendig?",
+                "options": [
+                    "Ja",
+                    "Nein"
+                ],
+                "correct": 0
             }
         ]
     },
@@ -171,6 +196,14 @@
                     {
                         "name": "Wollfaden",
                         "category": "Nichtleiter"
+                    },
+                    {
+                        "name": "Holzstab",
+                        "category": "Nichtleiter"
+                    },
+                    {
+                        "name": "Alufolie",
+                        "category": "Leiter"
                     }
                 ]
             }
@@ -213,6 +246,11 @@
                     "Nur wenn es dunkel ist"
                 ],
                 "correct": 1
+            },
+            {
+                "type": "fill_in",
+                "question": "Ergänze: Niemals einen Schalter mit _______ Händen berühren!",
+                "answer": "NASSEN"
             }
         ]
     },
@@ -249,6 +287,15 @@
                     "Wolfgang Amadeus Mozart"
                 ],
                 "correct": 0
+            },
+            {
+                "question": "Welche Lampe spart Strom?",
+                "options": [
+                    "Die alte Glühbirne",
+                    "Die Energiesparlampe",
+                    "Die Kerze"
+                ],
+                "correct": 1
             }
         ]
     },
@@ -293,6 +340,15 @@
                     "Luft"
                 ],
                 "correct": 1
+            },
+            {
+                "question": "Woher bekommt ein Windrad Energie?",
+                "options": [
+                    "Vom Wind",
+                    "Vom Regen",
+                    "Vom Boden"
+                ],
+                "correct": 0
             }
         ]
     },
@@ -321,11 +377,38 @@
                 "answer": "WIEN"
             },
             {
+                "question": "Wie heißt die Hauptstadt von Wien?",
+                "options": [
+                    "Wien",
+                    "Linz",
+                    "Graz"
+                ],
+                "correct": 0
+            },
+            {
                 "question": "Wie heißt die Hauptstadt von Niederösterreich?",
                 "options": [
                     "Wien",
                     "St. Pölten",
                     "Eisenstadt"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Wie heißt die Hauptstadt von Oberösterreich?",
+                "options": [
+                    "Linz",
+                    "Wels",
+                    "Steyr"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Wie heißt die Hauptstadt von Salzburg?",
+                "options": [
+                    "Hallein",
+                    "Salzburg",
+                    "Zell am See"
                 ],
                 "correct": 1
             },
@@ -339,11 +422,38 @@
                 "correct": 2
             },
             {
+                "question": "Wie heißt die Hauptstadt von Vorarlberg?",
+                "options": [
+                    "Bregenz",
+                    "Dornbirn",
+                    "Feldkirch"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Wie heißt die Hauptstadt von Kärnten?",
+                "options": [
+                    "Villach",
+                    "Klagenfurt",
+                    "Spittal"
+                ],
+                "correct": 1
+            },
+            {
                 "question": "Wie heißt die Hauptstadt von der Steiermark?",
                 "options": [
                     "Graz",
                     "Linz",
                     "Klagenfurt"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Wie heißt die Hauptstadt vom Burgenland?",
+                "options": [
+                    "Eisenstadt",
+                    "Mattersburg",
+                    "Rust"
                 ],
                 "correct": 0
             }
@@ -361,7 +471,7 @@
         "quiz": [
             {
                 "type": "fill_in",
-                "question": "Vervollständige den Gau: P_NZ_AU",
+                "question": "Vervollständige die Gaue: Flachgau, Tennengau, Pongau, Lungau und ...",
                 "answer": "PINZGAU"
             },
             {
@@ -381,6 +491,15 @@
                     "Tennengau"
                 ],
                 "correct": 0
+            },
+            {
+                "question": "Wie viele Gaue hat Salzburg (ohne Stadt)?",
+                "options": [
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "correct": 2
             }
         ]
     },
@@ -433,6 +552,24 @@
                     "Werfen"
                 ],
                 "correct": 0
+            },
+            {
+                "question": "Welches Kennzeichen hat Seekirchen (Flachgau)?",
+                "options": [
+                    "SE",
+                    "SL",
+                    "SK"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Welches Kennzeichen hat die Stadt Salzburg?",
+                "options": [
+                    "S",
+                    "SA",
+                    "SZ"
+                ],
+                "correct": 0
             }
         ]
     },
@@ -469,12 +606,14 @@
                     "Pinzgau",
                     "Pongau",
                     "Lungau",
-                    "Tennengau"
+                    "Tennengau",
+                    "Flachgau"
                 ],
                 "correctIndices": [
                     0,
                     1,
-                    3
+                    3,
+                    4
                 ]
             },
             {
@@ -500,6 +639,14 @@
                     {
                         "name": "Mattsee",
                         "category": "Natursee"
+                    },
+                    {
+                        "name": "Zeller See",
+                        "category": "Natursee"
+                    },
+                    {
+                        "name": "Tauernmoossee",
+                        "category": "Speichersee"
                     }
                 ]
             }
@@ -547,6 +694,15 @@
                 "correct": 1
             },
             {
+                "question": "Was tragen Glöckler am Kopf?",
+                "options": [
+                    "Einen Helm",
+                    "Lichterkappen",
+                    "Eine Krone"
+                ],
+                "correct": 1
+            },
+            {
                 "question": "Was wird beim Aperschnalzen verwendet?",
                 "options": [
                     "Eine Peitsche (Goaßl)",
@@ -581,6 +737,15 @@
                     "Schnalzer"
                 ],
                 "correct": 0
+            },
+            {
+                "question": "Was vertreibt das Aperschnalzen?",
+                "options": [
+                    "Die Geister",
+                    "Den Winter",
+                    "Die Mücken"
+                ],
+                "correct": 1
             }
         ]
     }
