@@ -1,0 +1,87 @@
+[
+    {
+        "id": "nationalfeiertag",
+        "title": "Unser Nationalfeiertag",
+        "image": "20260107_173852.jpg",
+        "importantText": [
+            "Seit dem 26. Oktober 1955 ist Österreich wieder frei.",
+            "An diesem Tag beschloss der Nationalrat das Gesetz über die Neutralität.",
+            "Neutralität bedeutet Nichteinmischung.",
+            "Österreich wird an keinem Krieg zwischen anderen Staaten teilnehmen und kein anderes Land im Kriegsfall unterstützen.",
+            "Am 26. Oktober feiern wir unseren Nationalfeiertag."
+        ],
+        "quiz": [
+            {
+                "question": "Wann ist der österreichische Nationalfeiertag?",
+                "options": [
+                    "26. Oktober",
+                    "1. Mai",
+                    "15. Mai"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Wer sagte die berühmten Worte 'Österreich ist frei!'?",
+                "options": [
+                    "Leopold Figl",
+                    "Julius Raab",
+                    "Konrad Adenauer"
+                ],
+                "correct": 0
+            },
+            {
+                "type": "fill_in",
+                "question": "Trage die fehlenden Buchstaben ein: Ö_T_RRE_CH",
+                "answer": "ÖSTERREICH"
+            }
+        ]
+    },
+    {
+        "id": "stromkreis",
+        "title": "Der Stromkreis",
+        "image": "20260107_173943.jpg",
+        "importantText": [
+            "Für Versuche verwendet nur Strom aus einer Batterie, NIE aus der Steckdose!",
+            "Der Stromkreis muss geschlossen sein, damit das Lämpchen leuchtet."
+        ],
+        "quiz": [
+            {
+                "type": "table_classify",
+                "question": "Leiter oder Nichtleiter?",
+                "items": [
+                    {
+                        "name": "Radiergummi",
+                        "category": "Nichtleiter"
+                    },
+                    {
+                        "name": "Schere",
+                        "category": "Leiter"
+                    },
+                    {
+                        "name": "Lineal (Kunststoff)",
+                        "category": "Nichtleiter"
+                    },
+                    {
+                        "name": "Schlüssel",
+                        "category": "Leiter"
+                    }
+                ]
+            },
+            {
+                "type": "checklist",
+                "question": "Welche Teile gehören zu einem einfachen Stromkreis?",
+                "options": [
+                    "Batterie",
+                    "Lämpchen",
+                    "Kabel",
+                    "Wasser"
+                ],
+                "correctIndices": [
+                    0,
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+]

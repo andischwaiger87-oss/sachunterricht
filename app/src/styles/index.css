@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Modern Kid-Friendly Palette */
+  --color-bg: #f4f9f9;
+  --color-surface: #ffffff;
+  --color-primary: #3dccc7; /* Fresh Mint */
+  --color-primary-dark: #2bb3ae;
+  --color-secondary: #ff6b6b; /* Soft Playful Red */
+  --color-accent: #ffe66d; /* Sunny Yellow */
+  --color-text: #2c3e50;
+  --color-text-light: #546a7b;
+  --color-success: #6bcf63;
+  --color-error: #ff7675;
+
+  --font-family: 'Fredoka', sans-serif;
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 8px;
+
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 8px 15px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+  --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-bounce: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.5px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+/* Utilities */
+.container {
+  max-width: 600px; /* Mobile First optimal width */
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 80px; /* Space for specific mobile nav if needed */
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform var(--transition-fast);
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(61, 204, 199, 0.3);
+  transition: transform var(--transition-bounce), box-shadow var(--transition-bounce);
+  width: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(61, 204, 199, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
