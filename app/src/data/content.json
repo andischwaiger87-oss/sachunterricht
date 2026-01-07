@@ -9,7 +9,8 @@
             "An diesem Tag beschloss der Nationalrat das Gesetz über die Neutralität.",
             "Neutralität bedeutet Nichteinmischung.",
             "Österreich wird an keinem Krieg zwischen anderen Staaten teilnehmen und kein anderes Land im Kriegsfall unterstützen.",
-            "Am 26. Oktober feiern wir unseren Nationalfeiertag."
+            "Am 26. Oktober feiern wir unseren Nationalfeiertag.",
+            "Der damalige Außenminister Leopold Figl rief: 'Österreich ist frei!'"
         ],
         "quiz": [
             {
@@ -40,6 +41,15 @@
                 "correct": 0
             },
             {
+                "question": "Wer rief 'Österreich ist frei!'?",
+                "options": [
+                    "Leopold Figl",
+                    "Wolfgang Amadeus Mozart",
+                    "Franz Klammer"
+                ],
+                "correct": 0
+            },
+            {
                 "type": "fill_in",
                 "question": "Trage die fehlenden Buchstaben ein: Ö_T_RRE_CH",
                 "answer": "ÖSTERREICH"
@@ -60,7 +70,7 @@
         "title": "Der Stromkreis",
         "emoji": "🔋",
         "image": "20260107_173943.jpg",
-        "rotate": 90,
+        "rotate": 270,
         "importantText": [
             "Für Versuche verwendet nur Strom aus einer Batterie, NIE aus der Steckdose!",
             "Materialien, die den Strom leiten, werden Leiter genannt.",
@@ -132,7 +142,7 @@
         "title": "Stromleitungen & Denken",
         "emoji": "💡",
         "image": "20260107_173955.jpg",
-        "rotate": 90,
+        "rotate": 270,
         "importantText": [
             "Die Lampe leuchtet, weil elektrischer Strom fließt.",
             "Die Lampe leuchtet, weil der Schalter den Stromkreis schließt.",

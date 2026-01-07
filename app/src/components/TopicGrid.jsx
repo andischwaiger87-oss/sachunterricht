@@ -32,7 +32,7 @@ const TopicGrid = () => {
                                 {topic.emoji}
                             </div>
                             <div>
-                                <h2 style={{ fontSize: '1.5rem', marginBottom: '5px' }}>{topic.title}</h2>
+                                <h2 style={{ fontSize: '1.5rem', marginBottom: '5px', lineHeight: '1.2' }}>{topic.title}</h2>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: 'var(--color-primary)', fontWeight: '600' }}>
                                     <BookOpen size={18} />
                                     <span>Lernen & Üben</span>
