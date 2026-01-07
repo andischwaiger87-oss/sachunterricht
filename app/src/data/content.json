@@ -43,6 +43,15 @@
                 "type": "fill_in",
                 "question": "Trage die fehlenden Buchstaben ein: Ö_T_RRE_CH",
                 "answer": "ÖSTERREICH"
+            },
+            {
+                "question": "Darf Österreich im Krieg einem anderen Land helfen?",
+                "options": [
+                    "Ja, immer",
+                    "Nein (Neutralität)",
+                    "Nur bei gutem Wetter"
+                ],
+                "correct": 1
             }
         ]
     },
@@ -106,6 +115,15 @@
                         "category": "Leiter"
                     }
                 ]
+            },
+            {
+                "question": "Wie nennt man Materialien, die keinen Strom leiten?",
+                "options": [
+                    "Leiter",
+                    "Isolatoren (Nichtleiter)",
+                    "Batterien"
+                ],
+                "correct": 1
             }
         ]
     },
@@ -156,6 +174,15 @@
                     "Nein"
                 ],
                 "correct": 0
+            },
+            {
+                "question": "Was passiert, wenn der Stromkreis unterbrochen ist?",
+                "options": [
+                    "Die Lampe leuchtet weiter",
+                    "Die Lampe leuchtet nicht mehr",
+                    "Die Batterie explodiert"
+                ],
+                "correct": 1
             }
         ]
     },
@@ -251,6 +278,15 @@
                 "type": "fill_in",
                 "question": "Ergänze: Niemals einen Schalter mit _______ Händen berühren!",
                 "answer": "NASSEN"
+            },
+            {
+                "question": "Wen sollst du rufen, wenn du eine kaputte Leitung siehst?",
+                "options": [
+                    "Erwachsene",
+                    "Niemanden",
+                    "Deine Freunde zum Spielen"
+                ],
+                "correct": 0
             }
         ]
     },
@@ -294,6 +330,15 @@
                     "Die alte Glühbirne",
                     "Die Energiesparlampe",
                     "Die Kerze"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Darf man eine Energiesparlampe zerbrechen?",
+                "options": [
+                    "Ja, das macht Spaß",
+                    "Nein, wegen dem giftigen Quecksilber",
+                    "Egal"
                 ],
                 "correct": 1
             }
@@ -349,6 +394,15 @@
                     "Vom Boden"
                 ],
                 "correct": 0
+            },
+            {
+                "question": "Warum sind alternative Energiequellen gut?",
+                "options": [
+                    "Sie sind teuer",
+                    "Sie schonen die Umwelt",
+                    "Sie verbrauchen viel Öl"
+                ],
+                "correct": 1
             }
         ]
     },
@@ -500,6 +554,14 @@
                     "5"
                 ],
                 "correct": 2
+            },
+            {
+                "question": "Ist die Stadt Salzburg ein eigener Bezirk?",
+                "options": [
+                    "Ja",
+                    "Nein"
+                ],
+                "correct": 0
             }
         ]
     },
@@ -649,6 +711,15 @@
                         "category": "Speichersee"
                     }
                 ]
+            },
+            {
+                "question": "In welchem Gau entspringt die Salzach?",
+                "options": [
+                    "Flachgau",
+                    "Pinzgau (Wald im Pinzgau)",
+                    "Lungau"
+                ],
+                "correct": 1
             }
         ]
     },
@@ -746,6 +817,15 @@
                     "Die Mücken"
                 ],
                 "correct": 1
+            },
+            {
+                "question": "Was bekommt man vom Kasmandl?",
+                "options": [
+                    "Süßigkeiten",
+                    "Kartoffeln",
+                    "Wasser"
+                ],
+                "correct": 0
             }
         ]
     }
