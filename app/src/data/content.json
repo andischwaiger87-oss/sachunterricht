@@ -348,5 +348,104 @@
                 "correct": 0
             }
         ]
+    },
+    {
+        "id": "salzach",
+        "title": "Die Salzach & Seen",
+        "image": "20260107_174234.jpg",
+        "importantText": [
+            "Der Hauptfluss des Bundeslandes Salzburg ist die Salzach.",
+            "Sie entspringt am Fuße des Salzachgeiers.",
+            "Es gibt Naturseen (z.B. Fuschlsee, Wolfgangsee) und Speicherseen (z.B. Mooserboden) für Stromerzeugung."
+        ],
+        "quiz": [
+            {
+                "type": "fill_in",
+                "question": "Wie heißt der Hauptfluss von Salzburg?",
+                "answer": "SALZACH"
+            },
+            {
+                "type": "table_classify",
+                "question": "Natursee oder Speichersee?",
+                "items": [
+                    {
+                        "name": "Fuschlsee",
+                        "category": "Natursee"
+                    },
+                    {
+                        "name": "Mooserboden",
+                        "category": "Speichersee"
+                    },
+                    {
+                        "name": "Wolfgangsee",
+                        "category": "Natursee"
+                    },
+                    {
+                        "name": "Wasserfallboden",
+                        "category": "Speichersee"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "braeuche",
+        "title": "Salzburger Bräuche",
+        "image": "20260107_174341.jpg",
+        "importantText": [
+            "Nikolaus & Krampus: 5. und 6. Dezember.",
+            "Wilde Jagd: 2. Donnerstag im Advent (Untersberg), 12 Figuren.",
+            "Glöcklerlaufen: 6. Jänner (Dreikönigstag), weiße Kleidung, Lichterkappen.",
+            "Aperschnalzen: Im Flachgau, vertreibt den Winter mit der 'Goaßl'.",
+            "Kasmandl: Kommt zu Martini (11. Nov) in die Almhütten.",
+            "Tresterer: Pinzgauer Schönperchten, tanzen für gute Ernte."
+        ],
+        "quiz": [
+            {
+                "question": "Wann kommt der Heilige Nikolaus?",
+                "options": [
+                    "24. Dezember",
+                    "6. Dezember",
+                    "1. Jänner"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Welcher Brauch findet am Dreikönigstag (6. Jänner) statt?",
+                "options": [
+                    "Krampuslauf",
+                    "Glöcklerlaufen",
+                    "Fasching"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Was wird beim Aperschnalzen verwendet?",
+                "options": [
+                    "Eine Peitsche (Goaßl)",
+                    "Eine Glocke",
+                    "Ein Schwert"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Wer zieht zu Martini (11. November) in die Almhütten?",
+                "options": [
+                    "Der Kasmandl",
+                    "Der Osterhase",
+                    "Das Christkind"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Wo gibt es den Brauch der 'Wilden Jagd'?",
+                "options": [
+                    "Am Neusiedler See",
+                    "In den Untersberggemeinden",
+                    "In Wien"
+                ],
+                "correct": 1
+            }
+        ]
     }
 ]
