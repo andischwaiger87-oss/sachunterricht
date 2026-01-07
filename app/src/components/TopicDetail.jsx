@@ -31,7 +31,7 @@ const TopicDetail = () => {
                 <ArrowLeft size={20} /> Zurück zur Übersicht
             </Link>
 
-            <h1 style={{ marginBottom: '20px', color: 'var(--color-primary-dark)' }}>{topic.title}</h1>
+            <h1 style={{ marginBottom: '20px', color: 'var(--color-primary-dark)', lineHeight: '1.2' }}>{topic.title}</h1>
 
             <div style={{
                 display: 'grid',
