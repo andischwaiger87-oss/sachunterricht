@@ -2,6 +2,7 @@
     {
         "id": "nationalfeiertag",
         "title": "Unser Nationalfeiertag",
+        "emoji": "🇦🇹",
         "image": "20260107_173852.jpg",
         "importantText": [
             "Seit dem 26. Oktober 1955 ist Österreich wieder frei.",
@@ -39,6 +40,7 @@
     {
         "id": "stromkreis",
         "title": "Der Stromkreis",
+        "emoji": "🔋",
         "image": "20260107_173943.jpg",
         "rotate": 90,
         "importantText": [
@@ -89,6 +91,7 @@
     {
         "id": "stromleitungen",
         "title": "Stromleitungen & Denken",
+        "emoji": "💡",
         "image": "20260107_173955.jpg",
         "rotate": 90,
         "importantText": [
@@ -116,6 +119,7 @@
     {
         "id": "leiter_nichtleiter_tabelle",
         "title": "Leiter und Nichtleiter",
+        "emoji": "🔌",
         "image": "20260107_174020.jpg",
         "importantText": [
             "Metalle leiten den Strom gut.",
@@ -149,6 +153,7 @@
     {
         "id": "sicherheit",
         "title": "Achtung Gefahr! (Sicherheit)",
+        "emoji": "⚠️",
         "image": "20260107_174041.jpg",
         "importantText": [
             "Niemals eine abgerissene Leitung berühren, die von einem Mast herunterhängt!",
@@ -179,6 +184,7 @@
     {
         "id": "licht",
         "title": "Elektrisches Licht",
+        "emoji": "🔦",
         "image": "20260107_174105.jpg",
         "importantText": [
             "Glühbirne: Der Glaskolben enthält einen dünnen Draht (Glühfaden).",
@@ -214,6 +220,7 @@
     {
         "id": "alternative_strom",
         "title": "Alternative Stromerzeugung",
+        "emoji": "☀️",
         "image": "20260107_174118.jpg",
         "importantText": [
             "Solarzellen und Windräder können auch Strom liefern.",
@@ -249,6 +256,7 @@
     {
         "id": "bundeslaender",
         "title": "Österreichs Bundesländer",
+        "emoji": "🗺️",
         "image": "20260107_174142.jpg",
         "importantText": [
             "Österreich besteht aus 9 Bundesländern.",
@@ -287,6 +295,7 @@
     {
         "id": "salzburg_gaue",
         "title": "Salzburgs Gaue",
+        "emoji": "⛰️",
         "image": "20260107_174156.jpg",
         "importantText": [
             "Salzburg ist in 5 Gaue (und Salzburg-Stadt) eingeteilt.",
@@ -312,6 +321,7 @@
     {
         "id": "bezirke_kennzeichen",
         "title": "Gaue & Kennzeichen",
+        "emoji": "🚗",
         "image": "20260107_174213.jpg",
         "importantText": [
             "Flachgau -> Seekirchen (SL)",
@@ -354,6 +364,7 @@
     {
         "id": "salzach",
         "title": "Die Salzach & Seen",
+        "emoji": "🌊",
         "image": "20260107_174234.jpg",
         "importantText": [
             "Der Hauptfluss des Bundeslandes Salzburg ist die Salzach.",
@@ -393,6 +404,7 @@
     {
         "id": "braeuche",
         "title": "Salzburger Bräuche",
+        "emoji": "👹",
         "image": "20260107_174341.jpg",
         "importantText": [
             "Nikolaus & Krampus: 5. und 6. Dezember.",

@@ -18,17 +18,19 @@ const TopicGrid = () => {
                 {content.map((topic) => (
                     <Link to={`/topic/${topic.id}`} key={topic.id} style={{ textDecoration: 'none' }}>
                         <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                            <img
-                                src={`/images/${topic.image}`}
-                                alt={topic.title}
-                                style={{
-                                    width: '80px',
-                                    height: '80px',
-                                    objectFit: 'cover',
-                                    borderRadius: 'var(--radius-md)',
-                                    border: '2px solid var(--color-bg)'
-                                }}
-                            />
+                            <div style={{
+                                width: '80px',
+                                height: '80px',
+                                fontSize: '3rem',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                background: 'var(--color-bg)',
+                                borderRadius: 'var(--radius-md)',
+                                border: '2px solid var(--color-bg)'
+                            }}>
+                                {topic.emoji}
+                            </div>
                             <div>
                                 <h2 style={{ fontSize: '1.5rem', marginBottom: '5px' }}>{topic.title}</h2>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: 'var(--color-primary)', fontWeight: '600' }}>
