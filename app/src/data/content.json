@@ -42,9 +42,25 @@
         "image": "20260107_173943.jpg",
         "importantText": [
             "Für Versuche verwendet nur Strom aus einer Batterie, NIE aus der Steckdose!",
-            "Der Stromkreis muss geschlossen sein, damit das Lämpchen leuchtet."
+            "Materialien, die den Strom leiten, werden Leiter genannt.",
+            "Materialien, die den Strom nicht leiten, werden Isolatoren (Nichtleiter) genannt."
         ],
         "quiz": [
+            {
+                "type": "checklist",
+                "question": "Welche Teile gehören zu einem einfachen Stromkreis?",
+                "options": [
+                    "Batterie",
+                    "Lämpchen",
+                    "Kabel",
+                    "Wasser"
+                ],
+                "correctIndices": [
+                    0,
+                    1,
+                    2
+                ]
+            },
             {
                 "type": "table_classify",
                 "question": "Leiter oder Nichtleiter?",
@@ -66,21 +82,270 @@
                         "category": "Leiter"
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "id": "stromleitungen",
+        "title": "Stromleitungen & Denken",
+        "image": "20260107_173955.jpg",
+        "importantText": [
+            "Die Lampe leuchtet, weil elektrischer Strom fließt.",
+            "Die Lampe leuchtet, weil der Schalter den Stromkreis schließt.",
+            "Ein geschlossener Stromkreis ist notwendig für den Stromfluss."
+        ],
+        "quiz": [
             {
                 "type": "checklist",
-                "question": "Welche Teile gehören zu einem einfachen Stromkreis?",
+                "question": "Wann leuchtet die Lampe? (Wähle die RICHTIGEN aus)",
                 "options": [
-                    "Batterie",
-                    "Lämpchen",
-                    "Kabel",
-                    "Wasser"
+                    "Wenn der Schalter den Stromkreis schließt.",
+                    "Wenn elektrischer Strom fließt.",
+                    "Wenn es finster ist.",
+                    "Wenn der Motor sie antreibt."
                 ],
                 "correctIndices": [
                     0,
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "id": "leiter_nichtleiter_tabelle",
+        "title": "Leiter und Nichtleiter",
+        "image": "20260107_174020.jpg",
+        "importantText": [
+            "Metalle leiten den Strom gut.",
+            "Kunststoff, Holz und Papier sind Nichtleiter (Isolatoren)."
+        ],
+        "quiz": [
+            {
+                "type": "table_classify",
+                "question": "Ordne die Gegenstände zu!",
+                "items": [
+                    {
+                        "name": "Metall-Löffel",
+                        "category": "Leiter"
+                    },
+                    {
+                        "name": "Papierstreifen",
+                        "category": "Nichtleiter"
+                    },
+                    {
+                        "name": "Münze",
+                        "category": "Leiter"
+                    },
+                    {
+                        "name": "Strohhalm",
+                        "category": "Nichtleiter"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "sicherheit",
+        "title": "Achtung Gefahr! (Sicherheit)",
+        "image": "20260107_174041.jpg",
+        "importantText": [
+            "Niemals eine abgerissene Leitung berühren, die von einem Mast herunterhängt!",
+            "Niemals schadhafte Kabel, Stecker und Schalter berühren!",
+            "Niemals einen Schalter mit feuchten oder nassen Händen berühren!"
+        ],
+        "quiz": [
+            {
+                "question": "Was darfst du niemals mit nassen Händen berühren?",
+                "options": [
+                    "Lichtschalter",
+                    "Wasserhahn",
+                    "Seife"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Was tust du, wenn du eine abgerissene Leitung siehst?",
+                "options": [
+                    "Sofort anfassen",
+                    "Abstand halten und Erwachsene rufen",
+                    "Mit einem Stock anstupsen"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    {
+        "id": "licht",
+        "title": "Elektrisches Licht",
+        "image": "20260107_174105.jpg",
+        "importantText": [
+            "Glühbirne: Der Glaskolben enthält einen dünnen Draht (Glühfaden).",
+            "Energiesparlampe: Diese Lampe hilft Strom sparen und hält länger.",
+            "Der Glaskolben einer Energiesparlampe enthält giftiges Quecksilber. Niemals zerbrechen!"
+        ],
+        "quiz": [
+            {
+                "type": "fill_in",
+                "question": "Wie nennt man den dünnen Draht in der Glühbirne? G_Ü_F_D_N",
+                "answer": "GLÜHFADEN"
+            },
+            {
+                "question": "Warum gehören Energiesparlampen in den Sondermüll?",
+                "options": [
+                    "Weil sie aus Glas sind",
+                    "Weil sie giftiges Quecksilber enthalten",
+                    "Weil sie zu groß sind"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Thomas Alva ... wird oft als Erfinder der Glühbirne genannt.",
+                "options": [
+                    "Einstein",
+                    "Edison",
+                    "Newton"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    {
+        "id": "alternative_strom",
+        "title": "Alternative Stromerzeugung",
+        "image": "20260107_174118.jpg",
+        "importantText": [
+            "Solarzellen und Windräder können auch Strom liefern.",
+            "Diese alternative Art der Stromerzeugung schont die Umwelt.",
+            "Sonne und Wind stehen immer wieder zur Verfügung."
+        ],
+        "quiz": [
+            {
+                "type": "checklist",
+                "question": "Welche Aussagen sind richtig? (Kreuze an)",
+                "options": [
+                    "Elektrischer Strom ist sichtbar.",
+                    "Elektrischer Strom kann gefährlich sein.",
+                    "Metalle leiten den elektrischen Strom.",
+                    "Gummi leitet den elektrischen Strom."
+                ],
+                "correctIndices": [
                     1,
                     2
                 ]
+            },
+            {
+                "question": "Welche Energiequelle schont die Umwelt?",
+                "options": [
+                    "Kohlekraftwerk",
+                    "Windkraftwerk",
+                    "Dieselgenerator"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    {
+        "id": "bundeslaender",
+        "title": "Österreichs Bundesländer",
+        "image": "20260107_174142.jpg",
+        "importantText": [
+            "Österreich besteht aus 9 Bundesländern.",
+            "Die Bundeshauptstadt heißt Wien."
+        ],
+        "quiz": [
+            {
+                "question": "Wie viele Bundesländer hat Österreich?",
+                "options": [
+                    "7",
+                    "8",
+                    "9"
+                ],
+                "correct": 2
+            },
+            {
+                "question": "Wie heißt die Hauptstadt von Niederösterreich?",
+                "options": [
+                    "Wien",
+                    "St. Pölten",
+                    "Eisenstadt"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Wie heißt die Hauptstadt von Tirol?",
+                "options": [
+                    "Bregenz",
+                    "Salzburg",
+                    "Innsbruck"
+                ],
+                "correct": 2
+            }
+        ]
+    },
+    {
+        "id": "salzburg_gaue",
+        "title": "Salzburgs Gaue",
+        "image": "20260107_174156.jpg",
+        "importantText": [
+            "Salzburg ist in 5 Gaue (und Salzburg-Stadt) eingeteilt.",
+            "Flachgau, Tennengau, Pongau, Pinzgau, Lungau."
+        ],
+        "quiz": [
+            {
+                "type": "fill_in",
+                "question": "Vervollständige: P_NZ_AU",
+                "answer": "PINZGAU"
+            },
+            {
+                "question": "Welcher Gau ist ganz im Norden von Salzburg?",
+                "options": [
+                    "Lungau",
+                    "Flachgau",
+                    "Pongau"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    {
+        "id": "bezirke_kennzeichen",
+        "title": "Gaue & Kennzeichen",
+        "image": "20260107_174213.jpg",
+        "importantText": [
+            "Flachgau -> Seekirchen (SL)",
+            "Tennengau -> Hallein (HA)",
+            "Pongau -> St. Johann im Pongau (JO)",
+            "Pinzgau -> Zell am See (ZE)",
+            "Lungau -> Tamsweg (TA)",
+            "Salzburg-Stadt -> (S)"
+        ],
+        "quiz": [
+            {
+                "question": "Welches Kennzeichen hat Hallein (Tennengau)?",
+                "options": [
+                    "HL",
+                    "HA",
+                    "TN"
+                ],
+                "correct": 1
+            },
+            {
+                "question": "Wie heißt der Hauptort vom Lungau?",
+                "options": [
+                    "Tamsweg",
+                    "Zell am See",
+                    "Radstadt"
+                ],
+                "correct": 0
+            },
+            {
+                "question": "Welches Kennzeichen hat Zell am See?",
+                "options": [
+                    "ZE",
+                    "ZM",
+                    "ZS"
+                ],
+                "correct": 0
             }
         ]
     }
