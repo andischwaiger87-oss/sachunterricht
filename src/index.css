@@ -771,4 +771,241 @@ main {
   .bottom-nav-dock { bottom: 10px; width: 94%; padding: 8px 4px 6px; }
   .dock-audio-play { width: 50px; height: 50px; }
   .dock-audio-btn { width: 28px; height: 28px; right: -24px; }
+  .interactive-tasks-container { margin-top: 24px; }
+  .categorize-item { flex-direction: column; align-items: flex-start; }
+  .cat-buttons { width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .cat-buttons button { padding: 8px 4px; font-size: 0.85rem; }
+}
+
+/* === INTERACTIVE TASKS === */
+.interactive-tasks-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.interactive-task {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,52,58,0.06);
+  border: 1px solid rgba(0,52,58,0.08);
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.task-icon {
+  background: var(--teal-light);
+  color: var(--teal);
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 24px;
+}
+
+.task-question {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* Checkbox Task */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-color);
+  border: 1px solid rgba(0,52,58,0.1);
+  padding: 16px;
+  border-radius: 16px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.checkbox-item:hover {
+  background: #f0f7f7;
+  border-color: var(--teal);
+}
+
+.checkbox-item.selected {
+  background: var(--teal-light);
+  border-color: var(--teal);
+  color: var(--teal-dark);
+  box-shadow: 0 4px 12px rgba(0,150,136,0.15);
+}
+
+.check-icon {
+  color: var(--text-light);
+  font-size: 24px;
+  transition: color 0.2s;
+}
+
+.checkbox-item.selected .check-icon {
+  color: var(--teal);
+}
+
+/* Results checking */
+.checkbox-item.correct {
+  background: rgba(76, 175, 80, 0.1);
+  border-color: #4CAF50;
+  color: #2E7D32;
+}
+.checkbox-item.correct .check-icon {
+  color: #4CAF50;
+}
+
+.checkbox-item.incorrect {
+  background: rgba(244, 67, 54, 0.1);
+  border-color: #F44336;
+  color: #C62828;
+  text-decoration: line-through;
+}
+.checkbox-item.incorrect .check-icon {
+  color: #F44336;
+}
+
+.checkbox-item.missed {
+  border-style: dashed;
+  border-color: #FF9800;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Categorize Task */
+.categorize-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.categorize-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--bg-color);
+  border: 1px solid rgba(0,52,58,0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.cat-item-text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.correct-icon {
+  color: #4CAF50;
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cat-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.cat-btn {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid rgba(0,52,58,0.15);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cat-btn:hover:not(:disabled) {
+  background: var(--teal-light);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.cat-btn.active {
+  background: var(--teal);
+  color: white;
+  border-color: var(--teal);
+}
+
+.categorize-item.correct {
+  background: rgba(76, 175, 80, 0.08);
+  border-color: rgba(76, 175, 80, 0.3);
+}
+
+.cat-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.cat-btn.active:disabled {
+  opacity: 1;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+.error-shake {
+  animation: shakeError 0.4s ease-in-out;
+  background: rgba(244, 67, 54, 0.05);
+  border-color: rgba(244, 67, 54, 0.3);
+}
+
+.task-success-msg {
+  margin-top: 20px;
+  background: var(--teal);
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px rgba(0,150,136,0.3);
+}
+
+.slide-up {
+  animation: slideUpFade 0.4s ease forwards;
+}
+
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }

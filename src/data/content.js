@@ -336,6 +336,24 @@ export const appData = {
         "In einer Partnerschaft ist es wichtig: füreinander Zeit haben, einander helfen, einander vertrauen, miteinander Geduld haben und einander zuhören.",
         "Auch Sexualität gehört zu einer Partnerschaft dazu."
       ],
+      interactiveTasks: [
+        {
+          id: "int_part_1",
+          type: "checkbox",
+          question: "Was ist in einer Partnerschaft wichtig? (Kreuze an)",
+          options: [
+            { text: "füreinander Zeit haben", isCorrect: true },
+            { text: "jemanden ärgern", isCorrect: false },
+            { text: "einander helfen", isCorrect: true },
+            { text: "einander vertrauen", isCorrect: true },
+            { text: "auslachen", isCorrect: false },
+            { text: "miteinander Geduld haben", isCorrect: true },
+            { text: "einander zuhören", isCorrect: true },
+            { text: "schlagen", isCorrect: false },
+            { text: "etwas verbergen", isCorrect: false }
+          ]
+        }
+      ],
       questions: [
         {
           id: "part1",
@@ -408,6 +426,23 @@ export const appData = {
         "3. Monat: Ca. 12 cm, sieht aus wie ein kleiner Mensch.",
         "6. Monat: Ca. 35 cm, kann die Augen öffnen und hören.",
         "9. Monat: Das Baby ist ca. 50 cm groß und bereit zur Geburt."
+      ],
+      interactiveTasks: [
+        {
+          id: "int_pub_1",
+          type: "categorize",
+          question: "Wem passen diese Sätze? (Frauen, Männer oder Beiden)",
+          categories: ["Frauen", "Beide", "Männer"],
+          items: [
+            { text: "Der Bart wächst.", category: "Männer" },
+            { text: "Die Monatsblutung setzt ein.", category: "Frauen" },
+            { text: "Die Schamhaare wachsen.", category: "Beide" },
+            { text: "Der Körper wird größer.", category: "Beide" },
+            { text: "Die Brüste werden größer.", category: "Frauen" },
+            { text: "Die Stimme wird tiefer.", category: "Männer" },
+            { text: "Die Achselhaare wachsen.", category: "Beide" }
+          ]
+        }
       ],
       questions: [
         {

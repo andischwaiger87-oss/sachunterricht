@@ -1,5 +1,6 @@
 import React from 'react';
 import ImagePanel from './ImagePanel';
+import InteractiveTask from './InteractiveTask';
 
 function LearningModule({ topic, onBack }) {
   return (
@@ -42,6 +43,14 @@ function LearningModule({ topic, onBack }) {
               </div>
             ))}
           </div>
+
+          {topic.interactiveTasks && topic.interactiveTasks.length > 0 && (
+            <div className="interactive-tasks-container">
+              {topic.interactiveTasks.map(task => (
+                <InteractiveTask key={task.id} task={task} />
+              ))}
+            </div>
+          )}
 
           <div style={{ marginTop: '32px' }}>
             <button className="btn-primary full-width" onClick={onBack}>
