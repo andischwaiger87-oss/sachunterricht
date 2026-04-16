@@ -3,43 +3,52 @@ import ImagePanel from './ImagePanel';
 
 function LearningModule({ topic, onBack }) {
   return (
-    <div className="split-view-container">
-      {/* Left Panel: The Worksheet Image */}
-      <ImagePanel images={topic.images} />
+    <div className="module-page">
+      {/* Header */}
+      <div className="module-header-section">
+        <span className="module-tag">{topic.title}</span>
+        <h2 className="module-title">
+          Lernkarten: <span className="accent">{topic.title}</span>
+        </h2>
+      </div>
 
-      {/* Right Panel: The Facts */}
-      <div className="module-container">
-        <div className="top-controls">
-          <button className="back-btn" onClick={onBack}>
-            ← Zurück zur Übersicht
-          </button>
-        </div>
-        
-        <div className="module-header">
-          <div style={{ fontSize: '48px' }}>{topic.icon}</div>
-          <h2 style={{ color: topic.color, fontSize: '32px' }}>{topic.title}</h2>
-        </div>
+      {/* Mobile Image Button */}
+      <ImagePanel images={topic.images} mobileOnly />
 
-        <ul className="fact-list">
-          {topic.facts.map((fact, index) => (
-            <li 
-              key={index} 
-              className="fact-item"
-              style={{ borderLeftColor: topic.color, animationDelay: `${index * 0.1}s` }}
-            >
-              {fact}
-            </li>
-          ))}
-        </ul>
-        
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-          <button 
-            className="btn-primary" 
-            onClick={onBack}
-            style={{ backgroundColor: topic.color }}
-          >
-            Ich habe alles verstanden! 👍
+      {/* Split Layout */}
+      <div className="split-layout">
+        {/* Left: Image Panel (Desktop) */}
+        <ImagePanel images={topic.images} desktopOnly />
+
+        {/* Right: Knowledge Panel */}
+        <div>
+          <button className="back-button" onClick={onBack}>
+            <span className="material-symbols-outlined" style={{fontSize: '18px'}}>arrow_back</span>
+            Zurück zur Übersicht
           </button>
+
+          <div className="knowledge-panel" style={{ marginTop: '16px' }}>
+            <div className="knowledge-panel-title">
+              <span className="material-symbols-outlined">menu_book</span>
+              Wissenskarten
+            </div>
+
+            {topic.facts.map((fact, index) => (
+              <div key={index} className="fact-item">
+                <span className="fact-icon">
+                  <span className="material-symbols-outlined">verified</span>
+                </span>
+                <span>{fact}</span>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: '32px' }}>
+            <button className="btn-primary full-width" onClick={onBack}>
+              Alles verstanden!
+              <span className="material-symbols-outlined">check_circle</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

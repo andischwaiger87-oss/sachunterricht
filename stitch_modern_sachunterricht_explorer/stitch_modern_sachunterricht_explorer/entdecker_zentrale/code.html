@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explorer Center - Discovery Path</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#fdd34d",
+                    "on-secondary-fixed": "#463600",
+                    "surface-container-highest": "#97eaf6",
+                    "error": "#b31b25",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-dim": "#005d17",
+                    "surface-bright": "#e2fbff",
+                    "surface-container": "#aef4fe",
+                    "on-primary-fixed-variant": "#006264",
+                    "on-tertiary-fixed-variant": "#056f1f",
+                    "surface-container-high": "#a3effa",
+                    "on-primary-fixed": "#004344",
+                    "on-error": "#ffefee",
+                    "on-secondary": "#fff2d4",
+                    "surface-tint": "#006668",
+                    "error-dim": "#9f0519",
+                    "surface-dim": "#89e2ef",
+                    "on-tertiary-container": "#00631a",
+                    "primary-dim": "#00595a",
+                    "on-tertiary": "#d1ffc9",
+                    "primary-fixed-dim": "#63e1e3",
+                    "inverse-primary": "#7ffbfd",
+                    "on-secondary-container": "#5c4900",
+                    "on-primary": "#bdfeff",
+                    "on-primary-container": "#005859",
+                    "on-tertiary-fixed": "#004e12",
+                    "tertiary-fixed-dim": "#92ef8f",
+                    "primary-container": "#73f0f1",
+                    "inverse-surface": "#001113",
+                    "outline": "#477f87",
+                    "secondary-dim": "#624d00",
+                    "inverse-on-surface": "#6ea6ae",
+                    "on-background": "#00343a",
+                    "tertiary": "#006b1c",
+                    "tertiary-container": "#9ffe9b",
+                    "on-error-container": "#570008",
+                    "tertiary-fixed": "#9ffe9b",
+                    "surface-container-low": "#cef8ff",
+                    "outline-variant": "#7eb6bf",
+                    "error-container": "#fb5151",
+                    "secondary": "#705900",
+                    "surface": "#e2fbff",
+                    "background": "#e2fbff",
+                    "secondary-container": "#fdd34d",
+                    "on-surface-variant": "#29636b",
+                    "primary-fixed": "#73f0f1",
+                    "primary": "#006668",
+                    "surface-variant": "#97eaf6",
+                    "on-surface": "#00343a",
+                    "on-secondary-fixed-variant": "#675200",
+                    "secondary-fixed-dim": "#eec540"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#e2fbff]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,52,58,0.06)] flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden">
+<img alt="Young explorer with binoculars" data-alt="Close-up of a smiling 10-year-old explorer wearing a khaki hat and holding binoculars against a soft green park background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmPjXgU3pE8l2R6KvuCa8OTPGUryxMimpDqVrDmtuqaqFkydhfD7fTfOzp6MYgSnL_1VWNge65UiJQgjY-19tDFCAVdAC8NaQuCxJAAg6LBuCK5q-8kwc2S6MC4pTKkj9oUWgbtEFyoDcijNUc25xJwsaEJhRIVUuaZBwkHdQ2wORL2S04C6TnhBT-Wnrl2ExtK9wwIpJ621K1mVj-6-wtMGitcz7foK_Bjm_yug6lqr1XYQm2TSPU32oXPG7gzWPe53FzOX917tc"/>
+</div>
+<span class="text-[#006668] dark:text-[#47CACC] font-plus-jakarta font-black text-2xl tracking-tight">Explorer Center</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full text-[#006668] hover:bg-[#006668]/5 transition-colors">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto space-y-10">
+<!-- Greeting Section -->
+<section class="mt-8">
+<h1 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight">Hi, Felix!</h1>
+<p class="text-on-surface-variant text-lg mt-2 font-medium">Ready for today's mission?</p>
+</section>
+<!-- Daily Adventure Hero (Bento Style) -->
+<section class="relative group">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface-container-lowest rounded-lg p-8 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+<div class="relative z-10 space-y-4 max-w-md">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                            DAILY ADVENTURE
+                        </div>
+<h2 class="text-3xl font-bold text-on-surface leading-tight">The Secret Life of Fireflies</h2>
+<p class="text-on-surface-variant">Journey into the night forest to discover how these tiny beetles use bioluminescence to talk!</p>
+<div class="pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-primary-dim transition-colors scale-95 duration-200 active:scale-90">
+                                Start Journey
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Progress Mini Indicator -->
+<div class="relative z-10 mt-8">
+<div class="flex justify-between items-center mb-2 text-sm font-bold text-on-surface-variant">
+<span>Mission Progress</span>
+<span>65%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[65%]"></div>
+</div>
+</div>
+<!-- Abstract Background Graphic -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<img class="object-cover h-full w-full mask-gradient" data-alt="Lush dark forest at dusk with glowing fireflies and soft sparkles of light scattered between trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmbvrKe3Od2HUvB3rJiRXBh6lpHxCeY_EKspfdyo1UyH7V3ETH6CsOSgFfKBtfeS9VEbDEaP_eGuDxPPjMBOM5oVMUmYBXJpuawxlPcyWhvASwlKu3vz3bE_Evxjs7v9yg6xgTCgVByC6KtwyYoL4u-n5iPw_XU33SSF7pq5auKdhsCkj3zmrKgd9mqknGppWnItXEpjieCAHHhEYwCiCyfQjmRa2a3jXTUIjPLE--U7eQR25fiYxZpL0ZfhhWwCDZeHJgWKVC3KQ"/>
+</div>
+</div>
+<!-- Side Info Card -->
+<div class="md:col-span-4 bg-tertiary-container rounded-lg p-6 flex flex-col items-center justify-center text-center space-y-4">
+<div class="w-20 h-20 bg-tertiary rounded-full flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<h3 class="font-bold text-xl text-on-tertiary-container">Explorer Rank</h3>
+<p class="text-on-tertiary-container opacity-80">Forest Guardian</p>
+</div>
+<div class="bg-on-tertiary-container/10 px-4 py-2 rounded-xl w-full">
+<span class="text-xs font-bold uppercase tracking-widest text-on-tertiary-container">Next Reward</span>
+<div class="font-bold text-on-tertiary-container mt-1">Magnifying Glass Skin</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Topic Worlds (Horizontal Scroll) -->
+<section class="space-y-6">
+<div class="flex justify-between items-end px-2">
+<div>
+<h2 class="text-2xl font-bold text-on-surface">Topic Worlds</h2>
+<p class="text-on-surface-variant font-medium">Choose your field of study</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-1 hover:underline">
+                    View All
+                    <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 scrollbar-hide px-2 -mx-2">
+<!-- Nature World -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container rounded-lg mb-4 overflow-hidden relative shadow-sm hover:shadow-xl transition-all duration-300">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vibrant close-up of lush ferns and moss in a sun-dappled forest floor with dramatic morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPAYeiBbIfoYGpD8giRyNsDBczLIwBVbYYq1k6U8S69uXO2szfZq0c42ZNwl3KLdpXfwkdXe2kFd8e9JutVgdbziVdhWyblBCycDFP1oJ4t_hwHCg-IJT93PPIYdHeMeLt3y8HAluC2nY07DAs6OBhF4x4AaYV8oYF_NhIjgPD7nKnNcTSlsozg6SAITbQJOnT3by_vyQf7thklG2SFk2QEvNMGT8iFR0gYWzzC3YB3Mv0Luamj0IaCvHSDG3DMwPpalr_o_cT4rc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-white font-bold text-2xl">Nature</span>
+<div class="flex items-center gap-2 text-white/90 text-sm mt-1">
+<span class="material-symbols-outlined text-sm">eco</span>
+                                12 Adventures
+                            </div>
+</div>
+</div>
+</div>
+<!-- Space World -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container rounded-lg mb-4 overflow-hidden relative shadow-sm hover:shadow-xl transition-all duration-300">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Stylized image of a distant swirling blue galaxy with glowing stars and cosmic nebula dust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTViYhetp_lkBhokbGeRQd0NvGNZJdUa0ixLvFZzQu16lGEyUK8M8L449zZXGmwzAuQZo8opcIcIj8h2sj03XWVsjw1i4HVCvPGUte4JDZAiIpQXaQFXTOcSAMVI8vqyR-cYFtaLunPrr7LP_qKQu_Xrqcd627hqQwdrTmoxnSvsTybCiLtsNhrqQvkVnCVyH7OkGxzoYS8pUIDjO2Mf8P5mBYaPZPX-Z_o-OJ3CPYI9zY1vf_NkqKsPZO50BkX41xt2k0JH8Z8CQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-white font-bold text-2xl">Space</span>
+<div class="flex items-center gap-2 text-white/90 text-sm mt-1">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+                                8 Adventures
+                            </div>
+</div>
+</div>
+</div>
+<!-- Technology World -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container rounded-lg mb-4 overflow-hidden relative shadow-sm hover:shadow-xl transition-all duration-300">
+<img class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern friendly robot head with glowing blue eyes in a bright white minimalist science lab setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcDbDkcSerZSRKAsXf03cnFQ4Io0g1kQwnZeC0yILqqOBIxU6P4svqRKa6uRAjPqY9qv8VkZF0sB8JGLa8C-QlHKm9CB1bbKM1EZ3GaXLK1_cJfmLorQQRJF16wyG5seT57Ne0WdygOVHU_OXvnB7BzMHNCDK5tumLT40ZcITjBav78UE0Z9wrX3KowdNX6k1YD0HRO_AIyYWYFU8ir7OjUX_FIPo7pd6mvKPFiKtLAdwsimy_mpPFLvz2g2BwkfpdHKxS0w_Qtp8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#705900]/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="text-white font-bold text-2xl">Technology</span>
+<div class="flex items-center gap-2 text-white/90 text-sm mt-1">
+<span class="material-symbols-outlined text-sm">memory</span>
+                                15 Adventures
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bento -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-high rounded-lg p-6 flex flex-col items-center gap-2">
+<span class="text-3xl font-black text-primary">24</span>
+<span class="text-sm font-bold text-on-surface-variant uppercase tracking-tighter">Badges</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-6 flex flex-col items-center gap-2">
+<span class="text-3xl font-black text-primary">15h</span>
+<span class="text-sm font-bold text-on-surface-variant uppercase tracking-tighter">Exploring</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-6 flex flex-col items-center gap-2">
+<span class="text-3xl font-black text-primary">1.2k</span>
+<span class="text-sm font-bold text-on-surface-variant uppercase tracking-tighter">Quiz Points</span>
+</div>
+<div class="bg-surface-container-high rounded-lg p-6 flex flex-col items-center gap-2">
+<span class="text-3xl font-black text-primary">5</span>
+<span class="text-sm font-bold text-on-surface-variant uppercase tracking-tighter">Day Streak</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center px-4 py-2">
+<div class="bg-[#ffffff]/80 dark:bg-slate-900/80 backdrop-blur-2xl shadow-[0_40px_80px_rgba(0,52,58,0.1)] fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-[3rem] flex justify-around items-center py-2">
+<!-- Explore (Active) -->
+<button class="flex items-center justify-center bg-[#705900]/20 text-[#705900] dark:text-yellow-400 rounded-full p-4 ring-4 ring-[#705900]/10 hover:scale-110 transition-transform tap-highlight-none active:scale-90">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+</button>
+<!-- Library -->
+<button class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform tap-highlight-none active:scale-90">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</button>
+<!-- Quests -->
+<button class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform tap-highlight-none active:scale-90">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</button>
+<!-- Profile -->
+<button class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform tap-highlight-none active:scale-90">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+</body></html>

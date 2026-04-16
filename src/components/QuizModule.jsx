@@ -3,36 +3,28 @@ import ImagePanel from './ImagePanel';
 
 const Confetti = () => {
   const [particles, setParticles] = useState([]);
-  
   useEffect(() => {
-    const p = Array.from({ length: 50 }).map((_, i) => ({
+    const p = Array.from({ length: 40 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
-      y: -20,
-      rotation: Math.random() * 360,
-      speed: 1 + Math.random() * 3,
-      delay: Math.random() * 2
+      speed: 1.5 + Math.random() * 3,
+      delay: Math.random() * 2,
+      emoji: ['⭐', '🌟', '🎉', '🏆', '💯'][Math.floor(Math.random() * 5)]
     }));
     setParticles(p);
   }, []);
 
   return (
-    <div className="confetti" style={{position:'fixed', top:0, left:0, width:'100%', height:'100%', zIndex:999, pointerEvents:'none'}}>
+    <div className="confetti-overlay">
       {particles.map(p => (
-        <div 
-          key={p.id}
-          style={{
-            position: 'absolute',
-            left: `${p.x}%`,
-            top: `${p.y}%`,
-            fontSize: '30px',
-            animation: `fall ${p.speed}s linear ${p.delay}s forwards`,
-          }}
-        >
-          {['⭐', '🌟', '🎉', '🏆', '💯'][Math.floor(Math.random() * 5)]}
+        <div key={p.id} style={{
+          position: 'absolute', left: `${p.x}%`, top: '-5%',
+          fontSize: '28px',
+          animation: `confettiFall ${p.speed}s linear ${p.delay}s forwards`
+        }}>
+          {p.emoji}
         </div>
       ))}
-      <style>{`@keyframes fall { to { transform: translateY(120vh) rotate(720deg); } }`}</style>
     </div>
   );
 };
@@ -45,13 +37,13 @@ function QuizModule({ topic, onBack }) {
 
   if (!topic.questions || topic.questions.length === 0) {
     return (
-      <div className="split-view-container">
-        <ImagePanel images={topic.images} />
-        <div className="module-container">
-          <div className="top-controls"><button className="back-btn" onClick={onBack}>← Zurück</button></div>
-          <div style={{ textAlign: 'center', padding: '40px' }}>
-            <h2>Keine Fragen gefunden 😅</h2>
-          </div>
+      <div className="module-page">
+        <div className="quiz-result-container">
+          <button className="back-button" onClick={onBack} style={{marginBottom: '20px'}}>
+            <span className="material-symbols-outlined" style={{fontSize:'18px'}}>arrow_back</span>
+            Zurück
+          </button>
+          <h2 className="module-title">Keine Fragen vorhanden 😅</h2>
         </div>
       </div>
     );
@@ -62,9 +54,7 @@ function QuizModule({ topic, onBack }) {
   const handleOptionClick = (option) => {
     if (selectedOption !== null) return;
     setSelectedOption(option);
-    if (option === currentQ.correct) {
-      setScore(s => s + 1);
-    }
+    if (option === currentQ.correct) setScore(s => s + 1);
   };
 
   const handleNext = () => {
@@ -80,79 +70,93 @@ function QuizModule({ topic, onBack }) {
     const percent = Math.round((score / topic.questions.length) * 100);
     const isPerfect = percent === 100;
     return (
-      <div className="module-container" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+      <div className="module-page">
         {isPerfect && <Confetti />}
-        <h2 style={{ fontSize: '40px', color: topic.color }}>Quiz beendet! 🏁</h2>
-        <div style={{ fontSize: '100px', margin: '30px 0', animation: 'popIn 0.5s' }}>
-          {isPerfect ? '🏆' : (percent >= 50 ? '👏' : '💪')}
+        <div className="quiz-result-container">
+          <h2 className="module-title" style={{marginBottom: '8px'}}>Quiz beendet! 🏁</h2>
+          <div className="quiz-result-emoji">{isPerfect ? '🏆' : (percent >= 50 ? '👏' : '💪')}</div>
+          <p className="quiz-result-score">
+            {score} von {topic.questions.length} richtig ({percent}%)
+          </p>
+          <div style={{marginTop: '32px'}}>
+            <button className="btn-primary" onClick={onBack}>
+              Zurück zur Übersicht
+              <span className="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
         </div>
-        <p style={{ fontSize: '28px', fontWeight: 'bold' }}>
-          Du hast {score} von {topic.questions.length} Fragen richtig! ({percent}%)
-        </p>
-        <button 
-          className="btn-primary" 
-          onClick={onBack}
-          style={{ backgroundColor: topic.color, marginTop: '40px', fontSize: '22px' }}
-        >
-          Zurück zur Übersicht
-        </button>
       </div>
     );
   }
 
   return (
-    <div className="split-view-container">
-      {/* Left Panel: The original worksheet Image */}
-      <ImagePanel images={topic.images} />
+    <div className="module-page">
+      {/* Header */}
+      <div className="module-header-section">
+        <span className="module-tag">{topic.title}</span>
+        <h2 className="module-title">
+          Quiz: <span className="accent">{topic.title}</span>
+        </h2>
+      </div>
 
-      {/* Right Panel: The interactive question */}
-      <div className="module-container">
-        <div className="top-controls" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-          <button className="back-btn" onClick={onBack}>← Quiz abbrechen</button>
-          <div style={{ fontWeight: 'bold', color: topic.color, background: '#f7fafc', padding: '10px 15px', borderRadius:'12px' }}>
-            Frage {currentIdx + 1} / {topic.questions.length}
-          </div>
-        </div>
+      {/* Mobile Image Button */}
+      <ImagePanel images={topic.images} mobileOnly />
 
-        <div className="quiz-question">
-          {currentQ.question}
-        </div>
+      {/* Split Layout */}
+      <div className="split-layout">
+        {/* Left: Image Panel (Desktop) */}
+        <ImagePanel images={topic.images} desktopOnly />
 
-        <div className="options-grid">
-          {currentQ.options.map((opt, i) => {
-            let btnClass = "option-btn";
-            if (selectedOption !== null) {
-              if (opt === currentQ.correct) btnClass += " correct";
-              else if (opt === selectedOption) btnClass += " wrong";
-            }
-
-            return (
-              <button 
-                key={i}
-                className={btnClass}
-                onClick={() => handleOptionClick(opt)}
-                disabled={selectedOption !== null}
-              >
-                {opt}
-              </button>
-            );
-          })}
-        </div>
-
-        {selectedOption !== null && (
-          <div className="quiz-feedback">
-            <p style={{ fontSize: '22px', fontWeight: 'bold', marginBottom: '20px' }}>
-              {selectedOption === currentQ.correct ? 'Richtig! 🎉 Klasse gemacht.' : `Leider falsch! 😕 Richtig wäre: ${currentQ.correct}`}
-            </p>
-            <button 
-              className="btn-primary" 
-              onClick={handleNext}
-              style={{ backgroundColor: topic.color, width: '100%' }}
-            >
-              {currentIdx < topic.questions.length - 1 ? 'Nächste Frage ➡' : 'Ergebnis ansehen 🏁'}
+        {/* Right: Quiz Panel */}
+        <div>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'16px'}}>
+            <button className="back-button" onClick={onBack}>
+              <span className="material-symbols-outlined" style={{fontSize:'18px'}}>arrow_back</span>
+              Abbrechen
             </button>
+            <span className="quiz-counter">
+              Frage {currentIdx + 1} / {topic.questions.length}
+            </span>
           </div>
-        )}
+
+          <div className="knowledge-panel">
+            <p className="quiz-question-text">{currentQ.question}</p>
+
+            <div className="options-list">
+              {currentQ.options.map((opt, i) => {
+                let className = "option-button";
+                if (selectedOption !== null) {
+                  if (opt === currentQ.correct) className += " correct";
+                  else if (opt === selectedOption) className += " wrong";
+                }
+                return (
+                  <button
+                    key={i}
+                    className={className}
+                    onClick={() => handleOptionClick(opt)}
+                    disabled={selectedOption !== null}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
+
+            {selectedOption !== null && (
+              <div className="quiz-feedback-area">
+                <p className="quiz-feedback-text" style={{color: selectedOption === currentQ.correct ? 'var(--tertiary)' : 'var(--error)'}}>
+                  {selectedOption === currentQ.correct
+                    ? 'Richtig! 🎉 Super gemacht.'
+                    : `Leider falsch! 😕 Richtig wäre: ${currentQ.correct}`}
+                </p>
+                <button className="btn-primary full-width" onClick={handleNext}>
+                  {currentIdx < topic.questions.length - 1 ? 'Nächste Frage' : 'Ergebnis ansehen'}
+                  <span className="material-symbols-outlined">arrow_forward</span>
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

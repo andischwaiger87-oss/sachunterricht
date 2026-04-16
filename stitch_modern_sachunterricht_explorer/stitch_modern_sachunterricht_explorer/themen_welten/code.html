@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explorer Center - Topic Worlds</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#fdd34d",
+                    "on-secondary-fixed": "#463600",
+                    "surface-container-highest": "#97eaf6",
+                    "error": "#b31b25",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-dim": "#005d17",
+                    "surface-bright": "#e2fbff",
+                    "surface-container": "#aef4fe",
+                    "on-primary-fixed-variant": "#006264",
+                    "on-tertiary-fixed-variant": "#056f1f",
+                    "surface-container-high": "#a3effa",
+                    "on-primary-fixed": "#004344",
+                    "on-error": "#ffefee",
+                    "on-secondary": "#fff2d4",
+                    "surface-tint": "#006668",
+                    "error-dim": "#9f0519",
+                    "surface-dim": "#89e2ef",
+                    "on-tertiary-container": "#00631a",
+                    "primary-dim": "#00595a",
+                    "on-tertiary": "#d1ffc9",
+                    "primary-fixed-dim": "#63e1e3",
+                    "inverse-primary": "#7ffbfd",
+                    "on-secondary-container": "#5c4900",
+                    "on-primary": "#bdfeff",
+                    "on-primary-container": "#005859",
+                    "on-tertiary-fixed": "#004e12",
+                    "tertiary-fixed-dim": "#92ef8f",
+                    "primary-container": "#73f0f1",
+                    "inverse-surface": "#001113",
+                    "outline": "#477f87",
+                    "secondary-dim": "#624d00",
+                    "inverse-on-surface": "#6ea6ae",
+                    "on-background": "#00343a",
+                    "tertiary": "#006b1c",
+                    "tertiary-container": "#9ffe9b",
+                    "on-error-container": "#570008",
+                    "tertiary-fixed": "#9ffe9b",
+                    "surface-container-low": "#cef8ff",
+                    "outline-variant": "#7eb6bf",
+                    "error-container": "#fb5151",
+                    "secondary": "#705900",
+                    "surface": "#e2fbff",
+                    "background": "#e2fbff",
+                    "secondary-container": "#fdd34d",
+                    "on-surface-variant": "#29636b",
+                    "primary-fixed": "#73f0f1",
+                    "primary": "#006668",
+                    "surface-variant": "#97eaf6",
+                    "on-surface": "#00343a",
+                    "on-secondary-fixed-variant": "#675200",
+                    "secondary-fixed-dim": "#eec540"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #e2fbff;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#e2fbff]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,52,58,0.06)] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container ring-2 ring-primary/20">
+<img alt="Explorer Profile" data-alt="Young explorer with binoculars and a khaki hat smiling against a soft blue background, cartoon style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMYPxCf7KYSpEra8KOMDD9kL07kKlSyehd5BvH22l42EwGgZ2pP7jzGJKnrajyvOtrNgoaHTChfX8UP2LhOzs7t9PVTD_xGxCUDq9Me9viUr2M2EQT3QKmxdR_Z8_55ngtbt1o4k738518JoL0XJR8VL7XiYKp8SSdSakJlX9akygnTBUCfCirAupN8IkyiCWh9C9rsWG0-s--8Mw-qU0-GrzqA6dfrvpr-pqPMJIugXnDekx5B9GCK9MFIMI7SaQpJG6m1VBWAMc"/>
+</div>
+<span class="text-[#006668] dark:text-[#47CACC] font-plus-jakarta text-2xl font-bold tracking-tight">Explorer Center</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#006668]/5 transition-colors text-[#006668]">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-28 px-6 max-w-6xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-primary to-primary-dim p-8 text-on-primary">
+<div class="relative z-10 max-w-lg">
+<h1 class="text-4xl md:text-5xl font-black mb-4 leading-tight">Ready for your next discovery?</h1>
+<p class="text-lg opacity-90 font-medium">Choose a world below and start your journey through the wonders of our universe.</p>
+</div>
+<div class="absolute -right-12 -bottom-12 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[16rem]" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+</div>
+</section>
+<!-- Topic Worlds Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Wonders of Nature -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-6 flex flex-col gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:scale-[1.02] transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-on-surface mb-2">Wonders of Nature</h3>
+<p class="text-on-surface-variant leading-relaxed">Explore ecosystems, from the deepest oceans to the highest peaks.</p>
+</div>
+<div class="mt-auto pt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-bold text-on-surface-variant">8 of 12 lessons</span>
+<span class="text-sm font-bold text-tertiary">66%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-[66%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Space Exploration -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-6 flex flex-col gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:scale-[1.02] transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-on-surface mb-2">Space Exploration</h3>
+<p class="text-on-surface-variant leading-relaxed">Travel beyond the stars and discover the secrets of the galaxy.</p>
+</div>
+<div class="mt-auto pt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-bold text-on-surface-variant">3 of 15 lessons</span>
+<span class="text-sm font-bold text-primary">20%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[20%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: Secrets of Electricity -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-6 flex flex-col gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:scale-[1.02] transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-on-surface mb-2">Secrets of Electricity</h3>
+<p class="text-on-surface-variant leading-relaxed">Power up your mind by learning how energy flows and creates light.</p>
+</div>
+<div class="mt-auto pt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-bold text-on-surface-variant">12 of 12 lessons</span>
+<span class="text-sm font-bold text-secondary">100%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Ancient History (Additional for Layout) -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-6 flex flex-col gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:scale-[1.02] transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-[#fce4ec] flex items-center justify-center text-[#880e4f]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">temple_buddhist</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-on-surface mb-2">Ancient History</h3>
+<p class="text-on-surface-variant leading-relaxed">Dig deep into the past and uncover the legends of lost civilizations.</p>
+</div>
+<div class="mt-auto pt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-bold text-on-surface-variant">0 of 10 lessons</span>
+<span class="text-sm font-bold text-on-surface-variant/40">0%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/10 w-0 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Featured Banner (Bento Style Shift) -->
+<div class="md:col-span-2 group relative bg-secondary-fixed rounded-lg p-8 flex flex-col md:flex-row gap-8 items-center shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<div class="w-full md:w-1/3 aspect-square rounded-lg overflow-hidden relative">
+<img alt="Microscope Discovery" class="w-full h-full object-cover" data-alt="High quality close up of a colorful modern microscope on a bright lab desk with vibrant green liquid in beakers, soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNjCb5OBPHH1qZXTKTjoIw98yRzfTZcP40tnD18Nh3yvgdJRgwL05TCM25Y92J1_xDXmMDQPftO5qHpIcouJKpw92ArDEksB4jJCde2uTiIlFDHntDQbIyHycmYs8LjLVtfM8mnSShL2OixjfZhwIwAHYgLiFnJOAMFyQZPhc1Kh_CoY85v26uEPqov5KmzfMbdHzoumxhlZcsDGIkOfWHMqW6pKLyOHQyXy6IxdzeYUHW-xrRI5tpSe8QMISaA-yqq847SHzRv0s"/>
+</div>
+<div class="flex-1">
+<span class="inline-block px-3 py-1 bg-on-secondary-fixed text-secondary-fixed text-xs font-bold rounded-full mb-4 uppercase tracking-widest">New World</span>
+<h3 class="text-3xl font-black text-on-secondary-fixed mb-4">The Microscopic World</h3>
+<p class="text-on-secondary-fixed/80 text-lg mb-6 leading-relaxed">Enter a hidden dimension where the smallest things make the biggest impact on our lives.</p>
+<button class="bg-on-secondary-fixed text-secondary-fixed px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform">Start Exploration</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-[#ffffff]/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-[3rem] shadow-[0_40px_80px_rgba(0,52,58,0.1)] z-50 flex justify-around items-center px-4 py-2">
+<a class="flex items-center justify-center bg-[#705900]/20 text-[#705900] dark:text-yellow-400 rounded-full p-4 ring-4 ring-[#705900]/10 hover:scale-110 transition-transform active:scale-90 tap-highlight-none" href="#">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform active:scale-90 tap-highlight-none" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform active:scale-90 tap-highlight-none" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform active:scale-90 tap-highlight-none" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</nav>
+</body></html>

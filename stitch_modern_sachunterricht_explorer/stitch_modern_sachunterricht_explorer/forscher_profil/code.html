@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#fdd34d",
+                    "on-secondary-fixed": "#463600",
+                    "surface-container-highest": "#97eaf6",
+                    "error": "#b31b25",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-dim": "#005d17",
+                    "surface-bright": "#e2fbff",
+                    "surface-container": "#aef4fe",
+                    "on-primary-fixed-variant": "#006264",
+                    "on-tertiary-fixed-variant": "#056f1f",
+                    "surface-container-high": "#a3effa",
+                    "on-primary-fixed": "#004344",
+                    "on-error": "#ffefee",
+                    "on-secondary": "#fff2d4",
+                    "surface-tint": "#006668",
+                    "error-dim": "#9f0519",
+                    "surface-dim": "#89e2ef",
+                    "on-tertiary-container": "#00631a",
+                    "primary-dim": "#00595a",
+                    "on-tertiary": "#d1ffc9",
+                    "primary-fixed-dim": "#63e1e3",
+                    "inverse-primary": "#7ffbfd",
+                    "on-secondary-container": "#5c4900",
+                    "on-primary": "#bdfeff",
+                    "on-primary-container": "#005859",
+                    "on-tertiary-fixed": "#004e12",
+                    "tertiary-fixed-dim": "#92ef8f",
+                    "primary-container": "#73f0f1",
+                    "inverse-surface": "#001113",
+                    "outline": "#477f87",
+                    "secondary-dim": "#624d00",
+                    "inverse-on-surface": "#6ea6ae",
+                    "on-background": "#00343a",
+                    "tertiary": "#006b1c",
+                    "tertiary-container": "#9ffe9b",
+                    "on-error-container": "#570008",
+                    "tertiary-fixed": "#9ffe9b",
+                    "surface-container-low": "#cef8ff",
+                    "outline-variant": "#7eb6bf",
+                    "error-container": "#fb5151",
+                    "secondary": "#705900",
+                    "surface": "#e2fbff",
+                    "background": "#e2fbff",
+                    "secondary-container": "#fdd34d",
+                    "on-surface-variant": "#29636b",
+                    "primary-fixed": "#73f0f1",
+                    "primary": "#006668",
+                    "surface-variant": "#97eaf6",
+                    "on-surface": "#00343a",
+                    "on-secondary-fixed-variant": "#675200",
+                    "secondary-fixed-dim": "#eec540"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#e2fbff]/80 dark:bg-slate-900/80 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 w-full shadow-[0_20px_40px_rgba(0,52,58,0.06)]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden ring-2 ring-primary/20">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a young explorer wearing a yellow hat and binoculars, smiling, vibrant illustration style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClb6tVEldhxkOEX3GIuxxN4B1UZaRNSZWr_6ikptPYjHREXrH7tJuOoohLFKaKKcpMMogH5mFUQvkfwfI8UQQ9tO8GBLCXzghVhXk-qyE8P9BZTcCSthcYfX28VPemmVnKuUgr3rIe7NLb8kW6Bvk_4PHnrwYWsRXXAGBVzh2CJwVnP6oXV5SXWD7YJnTOo0hlD0_F7gkdF3SzMT11ozdFREh0BA2gZMZuVmqa4OmuSmVLkSTAMEll5vEPxUECABIyTKbzG0qfpew"/>
+</div>
+<h1 class="font-plus-jakarta text-2xl font-bold tracking-tight text-[#006668] dark:text-[#47CACC]">Explorer Center</h1>
+</div>
+<button class="hover:bg-[#006668]/5 transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#006668] dark:text-[#47CACC]">settings</span>
+</button>
+</header>
+<main class="mt-24 px-6 max-w-4xl mx-auto space-y-10">
+<!-- Profile Hero Section -->
+<section class="relative flex flex-col md:flex-row gap-8 items-center md:items-end">
+<!-- Large Avatar Discovery -->
+<div class="relative group">
+<div class="w-48 h-48 rounded-xl overflow-hidden shadow-[0_40px_80px_rgba(0,52,58,0.1)] bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Whimsical illustrated avatar of a young researcher with a magnifying glass and a backpack, bright teal and yellow color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYlJyqIGJJ2ndzMfBsOrXZOFuSIlnmdC6LRlpQnlRq6OSqkdXWVY2ftD07vqkzd7H235A0E60yAX0737sSzGzrFGbGnd1rXxuuAZupv2mLDvk5Ak9v6cotlHGnCnCMgq8Pz1AxeqSoQteON9FduTbumlHhRWQ3nqy7DC-7RlW51XNma9npkaHEOfCf4b5OJDwn0HMOEitosxZVdcoxvv2_U6rdjATw2DTffwBST2QSxgNfa3TQAeh205Ak98snau7CNvxUarzrGIA"/>
+</div>
+<div class="absolute -bottom-4 -right-4 bg-secondary-container text-on-secondary-container p-4 rounded-full shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">edit</span>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left space-y-2">
+<span class="text-secondary font-bold tracking-widest text-sm uppercase px-4 py-1 bg-secondary/10 rounded-full">Elite Scout</span>
+<h2 class="text-5xl font-black text-primary leading-tight">Leo’s Journey</h2>
+<div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+<div class="flex items-center gap-2 bg-surface-container px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-bold text-on-surface-variant">1,240 collected</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<span class="font-bold text-on-surface-variant">Level 14</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Stats and Badges -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Badges Section -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-lg p-8 shadow-sm space-y-6">
+<div class="flex justify-between items-center">
+<h3 class="text-2xl font-bold text-on-background">Explorer Badges</h3>
+<button class="text-primary font-bold text-sm hover:underline">View All</button>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+<!-- Badge 1 -->
+<div class="flex flex-col items-center text-center gap-3 group">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">landscape</span>
+</div>
+<span class="font-headline font-bold text-sm text-on-surface">Nature Scout</span>
+</div>
+<!-- Badge 2 -->
+<div class="flex flex-col items-center text-center gap-3 group">
+<div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<span class="font-headline font-bold text-sm text-on-surface">Star Watcher</span>
+</div>
+<!-- Badge 3 -->
+<div class="flex flex-col items-center text-center gap-3 group">
+<div class="w-20 h-20 bg-tertiary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary" style="font-variation-settings: 'FILL' 1;">magnification_small</span>
+</div>
+<span class="font-headline font-bold text-sm text-on-surface">Micro-Hero</span>
+</div>
+<!-- Badge 4 -->
+<div class="flex flex-col items-center text-center gap-3 opacity-40">
+<div class="w-20 h-20 bg-outline/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-outline">lock</span>
+</div>
+<span class="font-headline font-bold text-sm text-on-surface">Deep Diver</span>
+</div>
+</div>
+</div>
+<!-- Discovery Streak -->
+<div class="bg-secondary-container/30 rounded-lg p-8 flex flex-col justify-center items-center text-center space-y-4">
+<div class="text-secondary font-black text-6xl">12</div>
+<div class="text-on-secondary-container font-bold text-lg leading-tight">Day Discovery Streak!</div>
+<div class="flex gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-secondary/30"></span>
+</div>
+<p class="text-sm text-on-secondary-container/70">Keep exploring to earn the 'Sun Chaser' badge!</p>
+</div>
+</section>
+<!-- Recent Lessons: Editorial List -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-3xl font-black text-on-background">Recent Expeditions</h3>
+<p class="text-on-surface-variant font-medium">Your latest field research entries</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
+</div>
+<div class="space-y-4">
+<!-- Lesson Card 1 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all p-6 rounded-lg flex items-center gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up of a vibrant green fern leaf with intricate patterns, soft morning light, nature photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI0-l4Uw220LFJPtBKwfyhlCoDCchxJzY1TLcZyTsQ3HaKKdKMW6iRT47k6Tip4R19gZq094rf0sBGtszDO95p5q_ZL_Avc5fZ7oBskP0QAGyIKdQ9d0_g2t4PNZUH1w5z-vSfJqaG5dvdOpWps1-xVyJYJuHCimDVpmQqPjYvkqQjdsYXwlfXq4B1aJEwjkpFYw24mIVpSJFSrlR5CI8SGGjrl_3SGnyW7fB8hAFX5mrlf0-gPWiFV8Z3l9Fwc4qXgewKqOi4hRA"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 text-tertiary mb-1">
+<span class="material-symbols-outlined text-sm">psychology</span>
+<span class="text-xs font-bold uppercase tracking-wider">Biology</span>
+</div>
+<h4 class="text-xl font-bold text-on-background group-hover:text-primary transition-colors">The Secrets of Photosynthesis</h4>
+<p class="text-on-surface-variant text-sm mt-1">Completed 2 hours ago • Earned 50 stars</p>
+</div>
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-lowest text-tertiary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Lesson Card 2 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all p-6 rounded-lg flex items-center gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Stylized illustration of the moon and stars in a deep purple night sky, ethereal glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpYjoZSrGk5bFRKYS7pyA09YehlMVT-VdXpnPRFHHcYggwcKaJpS1m-eg35Ui0j551fy0owlw1mClUHF-riaJqaMH3DrUzz4lfL96pvS0t455ljiUMxJjnSfVxPRHj_4INBlntRhr0aKj4hH5R3UZa2OKnUG56_JRCFLUqhu_jD8baNp9YAEBvdgEoaFWq10Sf9A4nAx0PnkYJYJHazaMokXSTD4AJdOaj76S2eHyy6yyIZ6sT477nwHcy2tGQ8QtwbSJxdH4bebQ"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+<span class="text-xs font-bold uppercase tracking-wider">Astronomy</span>
+</div>
+<h4 class="text-xl font-bold text-on-background group-hover:text-primary transition-colors">Mapping the Big Dipper</h4>
+<p class="text-on-surface-variant text-sm mt-1">Completed yesterday • Earned 80 stars</p>
+</div>
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-lowest text-tertiary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Lesson Card 3 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all p-6 rounded-lg flex items-center gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dramatic view of cumulus clouds with a small rainbow peaking through, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoLFPgJgR3qG9NXXKnahNIC9OIKEBIxHxUwimNafmRwYhFmUIoW0oVwmiy6J_FZuk-4XqSDUfWwDLtQpE-RjdsOUg0iEy4e56YZ_WWnm5qjkMv4drCC-8JyUkVg1geDmYXVlVh_6-oPZl4Q9dYkTAt8KakoLVc88xAnpQwQLJZIGejcLqHY7q9rEbc-EG-VHJz0i6rEL1HV0le7Dm-z56FZ4dOLeg07AepSeoPHKdcg_Kf2lVVhqeJNipYcZvF1g5cVHGZv5efnyk"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 text-primary mb-1">
+<span class="material-symbols-outlined text-sm">cloud</span>
+<span class="text-xs font-bold uppercase tracking-wider">Climate</span>
+</div>
+<h4 class="text-xl font-bold text-on-background group-hover:text-primary transition-colors">How Clouds Are Formed</h4>
+<p class="text-on-surface-variant text-sm mt-1">Completed 3 days ago • Earned 45 stars</p>
+</div>
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-lowest text-tertiary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center px-4 py-2 bg-[#ffffff]/80 dark:bg-slate-900/80 backdrop-blur-2xl fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-[3rem] shadow-[0_40px_80px_rgba(0,52,58,0.1)]">
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform tap-highlight-none active:scale-90" href="#">
+<span class="material-symbols-outlined">explore</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform tap-highlight-none active:scale-90" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform tap-highlight-none active:scale-90" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+</a>
+<a class="flex items-center justify-center bg-[#705900]/20 text-[#705900] dark:text-yellow-400 rounded-full p-4 ring-4 ring-[#705900]/10 hover:scale-110 transition-transform tap-highlight-none active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+</a>
+</nav>
+</body></html>

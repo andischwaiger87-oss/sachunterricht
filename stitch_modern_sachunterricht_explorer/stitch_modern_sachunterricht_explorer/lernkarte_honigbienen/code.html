@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interactive Learning: Honey Bees</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#fdd34d",
+                    "on-secondary-fixed": "#463600",
+                    "surface-container-highest": "#97eaf6",
+                    "error": "#b31b25",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-dim": "#005d17",
+                    "surface-bright": "#e2fbff",
+                    "surface-container": "#aef4fe",
+                    "on-primary-fixed-variant": "#006264",
+                    "on-tertiary-fixed-variant": "#056f1f",
+                    "surface-container-high": "#a3effa",
+                    "on-primary-fixed": "#004344",
+                    "on-error": "#ffefee",
+                    "on-secondary": "#fff2d4",
+                    "surface-tint": "#006668",
+                    "error-dim": "#9f0519",
+                    "surface-dim": "#89e2ef",
+                    "on-tertiary-container": "#00631a",
+                    "primary-dim": "#00595a",
+                    "on-tertiary": "#d1ffc9",
+                    "primary-fixed-dim": "#63e1e3",
+                    "inverse-primary": "#7ffbfd",
+                    "on-secondary-container": "#5c4900",
+                    "on-primary": "#bdfeff",
+                    "on-primary-container": "#005859",
+                    "on-tertiary-fixed": "#004e12",
+                    "tertiary-fixed-dim": "#92ef8f",
+                    "primary-container": "#73f0f1",
+                    "inverse-surface": "#001113",
+                    "outline": "#477f87",
+                    "secondary-dim": "#624d00",
+                    "inverse-on-surface": "#6ea6ae",
+                    "on-background": "#00343a",
+                    "tertiary": "#006b1c",
+                    "tertiary-container": "#9ffe9b",
+                    "on-error-container": "#570008",
+                    "tertiary-fixed": "#9ffe9b",
+                    "surface-container-low": "#cef8ff",
+                    "outline-variant": "#7eb6bf",
+                    "error-container": "#fb5151",
+                    "secondary": "#705900",
+                    "surface": "#e2fbff",
+                    "background": "#e2fbff",
+                    "secondary-container": "#fdd34d",
+                    "on-surface-variant": "#29636b",
+                    "primary-fixed": "#73f0f1",
+                    "primary": "#006668",
+                    "surface-variant": "#97eaf6",
+                    "on-surface": "#00343a",
+                    "on-secondary-fixed-variant": "#675200",
+                    "secondary-fixed-dim": "#eec540"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .font-plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background min-h-screen selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#e2fbff]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,52,58,0.06)] flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden ring-2 ring-primary">
+<img alt="Explorer Center" class="w-full h-full object-cover" data-alt="Young explorer with binoculars looking focused and curious in a bright sunny outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2ica06jbBh7T_NRx2Mok5tCqK62bzIn2lXFN2d_3G_8MqOTkZBjekHTrcN4MEDtuh-qI8bkw6QDuop_dWfg4OvN7m-jII4pN-tdlcUIHBqwosHVNR5fIp6__Ha6AbyCtfUCYZe6qA9WDMe3L6X6fy9i8EoKX24nEK0-VxeHPnWumRiG5Xv3pxQA8FPNwOxqgzvJGdjmYnNxI0D4_06urDrLFoJf5Vj__m8-aVQjaHkfNwWOSL6ES1cZKudwo4oRLqfzS0lib2Mnc"/>
+</div>
+<h1 class="text-[#006668] dark:text-[#47CACC] font-plus-jakarta text-2xl font-bold tracking-tight">Explorer Center</h1>
+</div>
+<button class="text-[#00343a]/60 hover:bg-[#006668]/5 transition-colors p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Lesson Header -->
+<div class="mb-12 text-center md:text-left">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-headline font-bold text-sm tracking-wide uppercase mb-4">
+                Nature Science
+            </span>
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold text-on-background tracking-tight leading-tight">
+                The Secret Life of <span class="text-primary">Honey Bees</span>
+</h2>
+</div>
+<!-- Interactive Discovery Shell -->
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Main Visual Card -->
+<div class="lg:col-span-8 relative group">
+<div class="bg-surface-container-highest rounded-xl overflow-hidden shadow-sm relative aspect-[4/3] md:aspect-video">
+<img alt="Honey Bee" class="w-full h-full object-cover" data-alt="Macro close-up of a fuzzy honey bee landing on a vibrant purple flower with soft sun-drenched bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7D2Ci8jmQTHSE0Gs0uV1hZpwF9ViP8k5RGUkeeAVNx_AP0-Jef4PNoCjiBWPkFcMO4w4UfAeABBxJzi0X48N0ZI2UbcvhcsFY-Rgwb4U8G2UJT_N6eBovgZpDH11sB_3hGmKZkwzEonEhZywuPRX_tfvDJjj5PH6oDe1-661x1n7eYIPNL6P7d04RQesnnKV5XfUMFN8FWif9PXcP1mCW4bROkfh7pDYkXw-kDEYdXUriKchTnQbtijq7q0KVuilvGpeUUarPtlc"/>
+<!-- Interactive Hotspots -->
+<div class="absolute inset-0">
+<!-- Wings Hotspot -->
+<div class="absolute top-1/4 left-1/3 group/hotspot">
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container shadow-lg flex items-center justify-center animate-pulse hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+<div class="hidden group-hover/hotspot:block absolute bottom-12 left-1/2 -translate-x-1/2 w-48 p-4 bg-surface-container-lowest rounded-lg shadow-xl border border-outline-variant/20 text-sm">
+<p class="font-bold text-primary mb-1">Super Wings</p>
+<p class="text-on-surface-variant leading-relaxed">Bees beat their wings 200 times per second!</p>
+</div>
+</div>
+<!-- Fuzzy Body Hotspot -->
+<div class="absolute bottom-1/3 right-1/4 group/hotspot">
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container shadow-lg flex items-center justify-center animate-pulse hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+<div class="hidden group-hover/hotspot:block absolute bottom-12 left-1/2 -translate-x-1/2 w-48 p-4 bg-surface-container-lowest rounded-lg shadow-xl border border-outline-variant/20 text-sm">
+<p class="font-bold text-primary mb-1">Pollen Baskets</p>
+<p class="text-on-surface-variant leading-relaxed">The fuzz on their bodies acts like a magnet for pollen.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Fun Fact Speech Bubble -->
+<div class="mt-8 relative md:absolute md:-right-8 md:-bottom-4 max-w-xs">
+<div class="bg-primary text-on-primary p-6 rounded-lg shadow-xl relative">
+<span class="material-symbols-outlined absolute -top-4 -left-2 text-secondary-container scale-150" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<p class="font-bold font-headline mb-2 text-secondary-container">Bee Fact!</p>
+<p class="text-lg leading-relaxed font-medium italic">"Honey bees are the only insect that produces food eaten by humans!"</p>
+<!-- Bubble Tail -->
+<div class="hidden md:block absolute -left-4 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-r-[20px] border-r-primary border-b-[10px] border-b-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Side Discovery Panel -->
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-low p-8 rounded-lg">
+<h3 class="text-xl font-headline font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">menu_book</span>
+                        Explorer Mission
+                    </h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                        Hover over the <span class="text-secondary font-bold">yellow circles</span> on the bee to discover how these tiny engineers help our planet grow!
+                    </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-bold text-on-surface">Pollination Power</p>
+<p class="text-sm text-on-surface-variant">Helping plants create fruits and seeds.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-bold text-on-surface">Teamwork</p>
+<p class="text-sm text-on-surface-variant">Working together in a giant family called a hive.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Focus Action -->
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline font-extrabold text-xl shadow-lg hover:bg-primary-dim transition-all active:scale-95 flex items-center justify-center gap-3">
+                        Got it!
+                        <span class="material-symbols-outlined">check_circle</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center px-4 py-2 bg-[#ffffff]/80 dark:bg-slate-900/80 backdrop-blur-2xl w-[90%] max-w-md mx-auto rounded-[3rem] shadow-[0_40px_80px_rgba(0,52,58,0.1)]">
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+</a>
+<a class="flex items-center justify-center bg-[#705900]/20 text-[#705900] dark:text-yellow-400 rounded-full p-4 ring-4 ring-[#705900]/10 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</a>
+<a class="flex items-center justify-center text-[#006668]/40 dark:text-slate-500 p-4 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</nav>
+</body></html>
