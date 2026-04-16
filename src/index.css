@@ -81,61 +81,18 @@ h1, h2, h3, .font-headline {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 120px; /* space for bottom nav + audio */
-}
-
-/* ======= TOP APP BAR (Glassmorphism) ======= */
-.top-app-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  background: rgba(226, 251, 255, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 24px;
-}
-
-.top-app-bar .logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-}
-
-.top-app-bar .logo-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--primary-container);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-
-.top-app-bar .logo-text {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--primary);
-  letter-spacing: -0.02em;
+  padding-bottom: 140px; /* space for bottom nav */
 }
 
 /* ======= BOTTOM NAV DOCK ======= */
 .bottom-nav-dock {
   position: fixed;
-  bottom: 24px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 92%;
   max-width: 420px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   border-radius: var(--radius-xl);
@@ -143,45 +100,110 @@ h1, h2, h3, .font-headline {
   z-index: 50;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding: 8px;
+  align-items: flex-end;
+  padding: 10px 8px 8px;
 }
 
 .dock-btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 14px;
-  border-radius: var(--radius-full);
+  gap: 4px;
+  padding: 10px 18px;
+  border-radius: var(--radius-lg);
   border: none;
   background: transparent;
   color: rgba(0,102,104,0.35);
   cursor: pointer;
   transition: all 0.2s ease;
-  font-size: 24px;
 }
 
-.dock-btn:hover {
-  transform: scale(1.12);
-}
-
-.dock-btn:active {
-  transform: scale(0.9);
-}
+.dock-btn:hover { transform: scale(1.08); }
+.dock-btn:active { transform: scale(0.92); }
 
 .dock-btn.active {
-  background: rgba(112,89,0,0.2);
+  background: rgba(112,89,0,0.15);
   color: var(--secondary);
-  box-shadow: 0 0 0 4px rgba(112,89,0,0.1);
 }
 
 .dock-btn .material-symbols-outlined {
-  font-size: 26px;
+  font-size: 28px;
+}
+
+.dock-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Dock Audio Center */
+.dock-audio-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+  top: -12px;
+}
+
+.dock-audio-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: var(--primary);
+  color: var(--on-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,102,104,0.3);
+  transition: all 0.2s ease;
+}
+
+.dock-audio-play:hover { background: var(--primary-dim); transform: scale(1.08); }
+.dock-audio-play:active { transform: scale(0.92); }
+.dock-audio-play.playing { background: var(--secondary); }
+
+.dock-audio-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+  transition: all 0.2s;
+}
+
+.dock-audio-btn:hover { background: var(--surface-container); }
+
+.dock-audio-btn .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.dock-audio-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
 }
 
 /* ======= MAIN CONTENT ======= */
 main {
-  padding-top: 90px;
+  padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -710,59 +732,7 @@ main {
   justify-content: center;
 }
 
-/* ======= AUDIO PLAYER ======= */
-.audio-float {
-  position: fixed;
-  bottom: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 10px 20px;
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(126,182,191,0.2);
-  z-index: 40;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.audio-float .audio-label {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.audio-float .audio-label strong {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.audio-float .audio-label span {
-  font-size: 0.7rem;
-  color: var(--on-surface-variant);
-}
-
-.audio-play-btn {
-  background: var(--primary);
-  color: var(--on-primary);
-  border: none;
-  padding: 8px 18px;
-  border-radius: var(--radius-full);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.audio-play-btn:hover {
-  background: var(--primary-dim);
-}
+/* (Audio player is now integrated in bottom dock) */
 
 /* ======= CONFETTI ======= */
 .confetti-overlay {
@@ -788,18 +758,17 @@ main {
 }
 
 @media (max-width: 768px) {
-  .top-app-bar { padding: 12px 16px; }
-  .top-app-bar .logo-text { font-size: 1.25rem; }
-  main { padding-left: 16px; padding-right: 16px; }
-  .hero-section { padding: 32px 20px; }
-  .hero-section h1 { font-size: 2rem; }
-  .topics-grid { grid-template-columns: 1fr; gap: 20px; }
-  .module-title { font-size: 1.75rem; }
-  .quiz-question-text { font-size: 1.3rem; }
-  .option-button { padding: 16px 20px; font-size: 1rem; }
-  .fact-item { font-size: 0.95rem; padding: 14px; }
-  .knowledge-panel { padding: 20px; }
-  .bottom-nav-dock { bottom: 12px; width: 94%; }
-  .audio-float { bottom: 80px; padding: 8px 14px; gap: 10px; }
-  .audio-float .audio-label span { display: none; }
+  main { padding-left: 16px; padding-right: 16px; padding-top: 24px; }
+  .hero-section { padding: 28px 20px; }
+  .hero-section h1 { font-size: 1.85rem; }
+  .topics-grid { grid-template-columns: 1fr; gap: 16px; }
+  .module-title { font-size: 1.6rem; }
+  .module-header-section { margin-bottom: 24px; }
+  .quiz-question-text { font-size: 1.2rem; }
+  .option-button { padding: 16px 18px; font-size: 0.95rem; }
+  .fact-item { font-size: 0.9rem; padding: 12px; }
+  .knowledge-panel { padding: 18px; }
+  .bottom-nav-dock { bottom: 10px; width: 94%; padding: 8px 4px 6px; }
+  .dock-audio-play { width: 50px; height: 50px; }
+  .dock-audio-btn { width: 28px; height: 28px; right: -24px; }
 }
