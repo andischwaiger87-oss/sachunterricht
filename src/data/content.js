@@ -238,86 +238,86 @@ export const appData = {
         {
           id: "rq1",
           type: "multiple_choice",
-          question: "Gab es Ritter schon in der Antike (z.B. bei Römern)?",
-          options: ["Richtig", "Falsch – Ritter gab es erst im Mittelalter"],
-          correct: "Falsch – Ritter gab es erst im Mittelalter"
+          question: "In welcher Zeitepoche gab es typische Ritterkämpfe und Turniere?",
+          options: ["In der Antike bei den Römern", "Im Mittelalter", "Erst in der Neuzeit (nach 1500)", "In der Steinzeit"],
+          correct: "Im Mittelalter"
         },
         {
           id: "rq2",
           type: "multiple_choice",
-          question: "Ritterkämpfe gab es im Mittelalter.",
-          options: ["Richtig", "Falsch"],
-          correct: "Richtig"
+          question: "Warum wurden Burgen oft an schwer zugänglichen Orten gebaut?",
+          options: ["Weil die Ritter gerne wanderten", "Um sie im Kriegsfall besser verteidigen zu können", "Weil dort die Luft sauberer war", "Weil es dort wärmer war"],
+          correct: "Um sie im Kriegsfall besser verteidigen zu können"
         },
         {
           id: "rq3",
           type: "multiple_choice",
-          question: "Ritter trugen manchmal schwere Rüstungen.",
-          options: ["Richtig", "Falsch"],
-          correct: "Richtig"
-        },
-        {
-          id: "rq3b",
-          type: "multiple_choice",
-          question: "Die Rüstungen der Ritter konnten auch aus Holz sein.",
-          options: ["Richtig", "Falsch – sie waren immer aus Metall"],
-          correct: "Falsch – sie waren immer aus Metall"
+          question: "Welche zwei Standorte wurden für den Bau einer Burg bevorzugt gewählt?",
+          options: ["Mitten in einer Stadt oder auf einem Marktplatz", "An schwer zugänglichen Orten oder an einer Wassergrenze", "In Wäldern oder auf Feldern", "In Tälern oder neben Kirchen"],
+          correct: "An schwer zugänglichen Orten oder an einer Wassergrenze"
         },
         {
           id: "rq4",
           type: "multiple_choice",
-          question: "Unter der Rüstung trugen die Ritter nur im Winter Kleidung.",
-          options: ["Richtig", "Falsch – sie trugen immer Kleidung darunter"],
-          correct: "Falsch – sie trugen immer Kleidung darunter"
+          question: "Aus welchem Material bestand die Rüstung eines Ritters?",
+          options: ["Aus Holz und Leder", "Aus Stoff und Wolle", "Aus Metall", "Aus Stein und Ton"],
+          correct: "Aus Metall"
         },
         {
           id: "rq5",
           type: "multiple_choice",
-          question: "Ritter spielten manchmal auf Instrumenten und sangen.",
-          options: ["Richtig", "Falsch"],
-          correct: "Richtig"
+          question: "Warum trugen Ritter unter ihrer Metallrüstung immer Kleidung?",
+          options: ["Nur aus modischen Gründen", "Nur im Winter, damit ihnen nicht kalt wurde", "Damit das Metall nicht direkt auf der Haut scheuerte und Wunden verursachte", "Weil der König es befohlen hat"],
+          correct: "Damit das Metall nicht direkt auf der Haut scheuerte und Wunden verursachte"
         },
         {
           id: "rq6",
           type: "multiple_choice",
-          question: "Die Begleiter eines Ritters trainierten und kämpften an seiner Seite.",
-          options: ["Richtig", "Falsch"],
-          correct: "Richtig"
+          question: "Was machten Ritter neben dem Kämpfen manchmal noch?",
+          options: ["Sie gingen in die Schule", "Sie spielten auf Instrumenten und sangen (Minnesang)", "Sie bauten Straßen", "Sie arbeiteten als Händler auf Märkten"],
+          correct: "Sie spielten auf Instrumenten und sangen (Minnesang)"
         },
         {
           id: "rq7",
           type: "multiple_choice",
-          question: "Ritter lebten immer in ländlichen Gegenden.",
-          options: ["Richtig", "Falsch"],
-          correct: "Richtig"
+          question: "Wie nannte man die Begleiter eines Ritters, die an seiner Seite trainierten und kämpften?",
+          options: ["Soldaten", "Knappen", "Bauern", "Mönche"],
+          correct: "Knappen"
         },
         {
           id: "rq8",
           type: "multiple_choice",
-          question: "Wo wurden Burgen im Mittelalter bevorzugt gebaut?",
-          options: ["In der Ebene neben Städten", "An schwer zugänglichen Orten oder an einer Wassergrenze", "Mitten im Wald ohne Schutz"],
-          correct: "An schwer zugänglichen Orten oder an einer Wassergrenze"
+          question: "Wo lebten die meisten Ritter?",
+          options: ["In großen Städten mit vielen Einwohnern", "In ländlichen Gegenden", "Am Meer in Hafenstädten", "In Klöstern bei den Mönchen"],
+          correct: "In ländlichen Gegenden"
         },
         {
           id: "rq9",
           type: "multiple_choice",
-          question: "Wozu dienten die mittelalterlichen Burgen?",
-          options: ["Als Festungen und Wohnort für viele Menschen", "Nur als Gefängnisse", "Als Schulen"],
-          correct: "Als Festungen und Wohnort für viele Menschen"
+          question: "Eine Burg im Mittelalter diente vor allem als…",
+          options: ["Kirche und Gebetsstätte", "Festung und Wohnort für viele Menschen", "Schule für Kinder aus der Umgebung", "Marktplatz für Händler"],
+          correct: "Festung und Wohnort für viele Menschen"
         },
         {
           id: "rq10",
           type: "multiple_choice",
-          question: "Was förderten die Burgen im Mittelalter?",
-          options: ["Den Tourismus", "Das Rittertum", "Den Handel"],
-          correct: "Das Rittertum"
+          question: "Was wurde durch den Bau von Burgen im Mittelalter besonders gefördert?",
+          options: ["Die Wissenschaft und Forschung", "Das Rittertum und seine Kultur", "Der internationale Handel", "Die Landwirtschaft"],
+          correct: "Das Rittertum und seine Kultur"
         },
         {
           id: "rq11",
           type: "multiple_choice",
-          question: "Warum trugen Ritter unter der Rüstung Kleidung?",
-          options: ["Um hübsch auszusehen", "Damit das Metall nicht an der Haut scheuert", "Weil es Mode war"],
-          correct: "Damit das Metall nicht an der Haut scheuert"
+          question: "Wann trugen Ritter Kleidung unter ihrer Rüstung?",
+          options: ["Nur im Winter bei Kälte", "Nur bei besonderen Anlässen wie Turnieren", "Immer – egal bei welchem Wetter", "Nie, die Rüstung lag direkt auf der Haut"],
+          correct: "Immer – egal bei welchem Wetter"
+        },
+        {
+          id: "rq12",
+          type: "multiple_choice",
+          question: "Was ist 'Minnesang'?",
+          options: ["Ein Kampfsport der Ritter", "Ein Lied über Liebe und Sehnsucht, das Ritter sangen", "Der Name einer berühmten Burg", "Eine Rüstungsart aus Leder"],
+          correct: "Ein Lied über Liebe und Sehnsucht, das Ritter sangen"
         }
       ]
     },
