@@ -21,7 +21,7 @@ function Dashboard({ topics, onSelectTopic, mode }) {
         </h1>
         <p>
           {mode === 'lernen'
-            ? 'Wähle ein Kapitel und trainiere alles, was du für den Test wissen musst.'
+            ? 'Wähle ein Kapitel und trainiere alles, was du für den Test brauchst.'
             : 'Teste dein Wissen und beantworte spannende Fragen zu jedem Thema!'}
         </p>
         <div className="hero-bg-icon">
