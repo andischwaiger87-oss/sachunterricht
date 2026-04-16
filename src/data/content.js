@@ -12,6 +12,7 @@ export const appData = {
         "Um ein Gefühl für die lange Geschichte zu bekommen, baut man einen sogenannten Zeitstreifen.",
         "Für einen Zeitstreifen ordnet man Bildkarten genau passend zu Textkarten.",
         "Die Kartenpaare werden nach der Zeit geordnet auf einen langen Papierstreifen geklebt.",
+        "Man braucht dafür drei Papierstreifen, Bildkarten, Textkarten, Schere und Kleber.",
         "Einen fertig gestalteten Zeitstreifen kann man an die Wand hängen oder wie eine Ziehharmonika falten.",
         "Das höchste Gebäude der Welt ist der Burj Khalifa – ein Beispiel für modernes Wohnen und Bauen heute."
       ],
@@ -36,6 +37,34 @@ export const appData = {
           question: "Was kann man mit einem fertigen Zeitstreifen machen?",
           options: ["Aufhängen oder wie eine Ziehharmonika falten", "In den Papierkorb werfen"],
           correct: "Aufhängen oder wie eine Ziehharmonika falten"
+        },
+        {
+          id: "tq4",
+          type: "multiple_choice",
+          question: "Was muss man mit den Textkarten und Bildkarten tun, bevor man sie aufklebt?",
+          options: ["Ausschneiden und einander zuordnen", "Anmalen und zerschneiden"],
+          correct: "Ausschneiden und einander zuordnen"
+        },
+        {
+          id: "tq5",
+          type: "multiple_choice",
+          question: "In welcher Reihenfolge legt man die Kartenpaare auf den Papierstreifen?",
+          options: ["Alphabetisch", "Nach der Zeit geordnet (älteste zuerst)", "Zufällig"],
+          correct: "Nach der Zeit geordnet (älteste zuerst)"
+        },
+        {
+          id: "tq6",
+          type: "multiple_choice",
+          question: "Wie heißt das derzeit höchste Gebäude der Welt?",
+          options: ["Eiffelturm", "Empire State Building", "Burj Khalifa"],
+          correct: "Burj Khalifa"
+        },
+        {
+          id: "tq7",
+          type: "multiple_choice",
+          question: "Was sollst du vor Beginn der Arbeit am Zeitstreifen tun?",
+          options: ["Sofort losschneiden", "Die Seite ganz durchlesen", "Ein Bild malen"],
+          correct: "Die Seite ganz durchlesen"
         }
       ]
     },
@@ -52,6 +81,7 @@ export const appData = {
         "Aus jedem kleinen Samen sprießt eine ganz neue Pflanze.",
         "Die harten Hüllen nennt man Schale, innen befindet sich das Keimblatt und der Keimling.",
         "Aus dem Keimling wächst bald ein immer größer und grüner werdender Stängel.",
+        "Der Stängel wächst steil nach oben, Richtung Licht.",
         "Tipp: Führe ein Beobachtungstagebuch, um das Wachstum deiner Bohne festzuhalten!"
       ],
       questions: [
@@ -66,7 +96,7 @@ export const appData = {
           id: "bq2",
           type: "multiple_choice",
           question: "Was passiert, wenn man Bohnensamen ins Wasser legt?",
-          options: ["Sie lösen sich auf", "Sie quellen auf", "Sie werden hart"],
+          options: ["Sie lösen sich auf", "Sie quellen auf", "Sie werden noch härter"],
           correct: "Sie quellen auf"
         },
         {
@@ -82,6 +112,34 @@ export const appData = {
           question: "Welche drei Teile findest du im Inneren eines Bohnensamens?",
           options: ["Schale, Keimblatt und Keimling", "Wurzel, Blatt und Stängel", "Blüte, Frucht und Samen"],
           correct: "Schale, Keimblatt und Keimling"
+        },
+        {
+          id: "bq5",
+          type: "multiple_choice",
+          question: "Wie sind Bohnensamen im trockenen Zustand?",
+          options: ["Weich und matschig", "Hart", "Flüssig"],
+          correct: "Hart"
+        },
+        {
+          id: "bq6",
+          type: "multiple_choice",
+          question: "Was sprießt aus einem einzigen Bohnensamen?",
+          options: ["Nichts", "Eine ganz neue Pflanze", "Ein Stein"],
+          correct: "Eine ganz neue Pflanze"
+        },
+        {
+          id: "bq7",
+          type: "multiple_choice",
+          question: "Was sollst du als Projekt führen, um das Wachstum zu beobachten?",
+          options: ["Ein Tagebuch", "Ein Fotoalbum", "Ein Beobachtungstagebuch"],
+          correct: "Ein Beobachtungstagebuch"
+        },
+        {
+          id: "bq8",
+          type: "multiple_choice",
+          question: "In welche Richtung wächst der Stängel der Bohne?",
+          options: ["Nach unten in die Erde", "Zur Seite", "Steil nach oben, Richtung Licht"],
+          correct: "Steil nach oben, Richtung Licht"
         }
       ]
     },
@@ -111,23 +169,51 @@ export const appData = {
         {
           id: "sq2",
           type: "multiple_choice",
+          question: "Wie nennt man alle Knochen des Menschen zusammen?",
+          options: ["Das Muskelsystem", "Das Knochengerüst (Skelett)", "Das Nervensystem"],
+          correct: "Das Knochengerüst (Skelett)"
+        },
+        {
+          id: "sq3",
+          type: "multiple_choice",
           question: "Womit wird die Wirbelsäule verglichen, wenn es um das Stützen des Körpers geht?",
           options: ["Mit Kabelhüllen", "Mit Zeltstangen", "Mit einem Fahrradhelm"],
           correct: "Mit Zeltstangen"
         },
         {
-          id: "sq3",
+          id: "sq4",
           type: "multiple_choice",
           question: "Mit welchem Gegenstand vergleicht man den Schädel, der dein Gehirn schützt?",
           options: ["Mit Kabelhüllen", "Mit einem Fahrradhelm", "Mit einer Zeltstange"],
           correct: "Mit einem Fahrradhelm"
         },
         {
-          id: "sq4",
+          id: "sq5",
           type: "multiple_choice",
-          question: "Was schützt die Wirbelsäule zusätzlich im Inneren?",
+          question: "Was schützt die Wirbelsäule im Inneren?",
           options: ["Das Gehirn", "Das Rückenmark", "Das Herz"],
           correct: "Das Rückenmark"
+        },
+        {
+          id: "sq6",
+          type: "multiple_choice",
+          question: "Womit wird der Schutz des Rückenmarks durch die Wirbelsäule verglichen?",
+          options: ["Mit einem Fahrradhelm", "Mit einer Kabelhülle, die ein Kabel schützt", "Mit einem Rucksack"],
+          correct: "Mit einer Kabelhülle, die ein Kabel schützt"
+        },
+        {
+          id: "sq7",
+          type: "multiple_choice",
+          question: "Verändern sich die Knochen im Laufe des Lebens?",
+          options: ["Nein, nie", "Ja, Größe und Aufbau verändern sich", "Sie werden weniger"],
+          correct: "Ja, Größe und Aufbau verändern sich"
+        },
+        {
+          id: "sq8",
+          type: "multiple_choice",
+          question: "Was schützen die Schädelknochen?",
+          options: ["Die Lunge", "Das Herz", "Das Gehirn"],
+          correct: "Das Gehirn"
         }
       ]
     },
@@ -153,8 +239,8 @@ export const appData = {
           id: "rq1",
           type: "multiple_choice",
           question: "Gab es Ritter schon in der Antike (z.B. bei Römern)?",
-          options: ["Richtig", "Falsch"],
-          correct: "Falsch"
+          options: ["Richtig", "Falsch – Ritter gab es erst im Mittelalter"],
+          correct: "Falsch – Ritter gab es erst im Mittelalter"
         },
         {
           id: "rq2",
@@ -173,9 +259,9 @@ export const appData = {
         {
           id: "rq3b",
           type: "multiple_choice",
-          question: "Die Rüstung eines Ritters konnte aus Holz bestehen.",
-          options: ["Richtig", "Falsch – sie war immer aus Metall"],
-          correct: "Falsch – sie war immer aus Metall"
+          question: "Die Rüstungen der Ritter konnten auch aus Holz sein.",
+          options: ["Richtig", "Falsch – sie waren immer aus Metall"],
+          correct: "Falsch – sie waren immer aus Metall"
         },
         {
           id: "rq4",
@@ -204,6 +290,34 @@ export const appData = {
           question: "Ritter lebten immer in ländlichen Gegenden.",
           options: ["Richtig", "Falsch"],
           correct: "Richtig"
+        },
+        {
+          id: "rq8",
+          type: "multiple_choice",
+          question: "Wo wurden Burgen im Mittelalter bevorzugt gebaut?",
+          options: ["In der Ebene neben Städten", "An schwer zugänglichen Orten oder an einer Wassergrenze", "Mitten im Wald ohne Schutz"],
+          correct: "An schwer zugänglichen Orten oder an einer Wassergrenze"
+        },
+        {
+          id: "rq9",
+          type: "multiple_choice",
+          question: "Wozu dienten die mittelalterlichen Burgen?",
+          options: ["Als Festungen und Wohnort für viele Menschen", "Nur als Gefängnisse", "Als Schulen"],
+          correct: "Als Festungen und Wohnort für viele Menschen"
+        },
+        {
+          id: "rq10",
+          type: "multiple_choice",
+          question: "Was förderten die Burgen im Mittelalter?",
+          options: ["Den Tourismus", "Das Rittertum", "Den Handel"],
+          correct: "Das Rittertum"
+        },
+        {
+          id: "rq11",
+          type: "multiple_choice",
+          question: "Warum trugen Ritter unter der Rüstung Kleidung?",
+          options: ["Um hübsch auszusehen", "Damit das Metall nicht an der Haut scheuert", "Weil es Mode war"],
+          correct: "Damit das Metall nicht an der Haut scheuert"
         }
       ]
     },
@@ -226,7 +340,7 @@ export const appData = {
         {
           id: "part1",
           type: "multiple_choice",
-          question: "Was ist in einer Freundschaft und Partnerschaft besonders wichtig?",
+          question: "Was ist in einer Partnerschaft besonders wichtig?",
           options: ["Viel Geld haben", "Einander vertrauen, helfen und zuhören", "Immer das Gleiche tun"],
           correct: "Einander vertrauen, helfen und zuhören"
         },
@@ -236,6 +350,34 @@ export const appData = {
           question: "Wie nennt man es, wenn Menschen einander ganz besonders mögen?",
           options: ["Streit", "Freundschaft", "Langeweile"],
           correct: "Freundschaft"
+        },
+        {
+          id: "part3",
+          type: "multiple_choice",
+          question: "Was gehört laut dem Arbeitsblatt auch zu einer Partnerschaft?",
+          options: ["Nur Spielen", "Sexualität", "Nur Streiten"],
+          correct: "Sexualität"
+        },
+        {
+          id: "part4",
+          type: "multiple_choice",
+          question: "Wie fühlt man sich in einer Klasse, in der sich alle mögen?",
+          options: ["Es ist langweilig", "Es ist lustig und man fühlt sich wohl", "Man hat Angst"],
+          correct: "Es ist lustig und man fühlt sich wohl"
+        },
+        {
+          id: "part5",
+          type: "multiple_choice",
+          question: "Welche Dinge sind in einer Partnerschaft wichtig? (Nenne möglichst viele!)",
+          options: ["Zeit haben, helfen, vertrauen, Geduld haben, zuhören", "Streiten, ignorieren, weglaufen"],
+          correct: "Zeit haben, helfen, vertrauen, Geduld haben, zuhören"
+        },
+        {
+          id: "part6",
+          type: "multiple_choice",
+          question: "Was ist 'Liebe' laut dem Lernstoff?",
+          options: ["Etwas Unwichtiges", "Etwas in einer Partnerschaft besonders Wichtiges", "Eine Krankheit"],
+          correct: "Etwas in einer Partnerschaft besonders Wichtiges"
         }
       ]
     },
@@ -259,6 +401,7 @@ export const appData = {
         "Die Samenzelle beim Mann schwimmt mit einem 'Schwanz'. Sie ist so winzig, dass man sie nur unter dem Mikroskop sieht.",
         "Die Eizelle bei der Frau ist 200.000-mal größer als eine Samenzelle.",
         "Bei der Zeugung wird die Eizelle von einer Samenzelle befruchtet. Daraus entsteht neues Leben.",
+        "Auf dem Foto erkennt man bei einem fünf Monate alten Embryo bereits Arme, Beine, Kopf und Körper.",
         "Eine Schwangerschaft dauert etwa neun Monate.",
         "1. Monat: Winzig klein, das Herz beginnt zu schlagen.",
         "2. Monat: Ca. 3 cm, erste Bewegungen von Armen und Beinen.",
@@ -303,6 +446,13 @@ export const appData = {
           correct: "Glied und Hodensack"
         },
         {
+          id: "qp5b",
+          type: "multiple_choice",
+          question: "Welche Geschlechtsteile hat ein Mädchen?",
+          options: ["Glied und Hodensack", "Schamlippen und Scheide"],
+          correct: "Schamlippen und Scheide"
+        },
+        {
           id: "qp6",
           type: "multiple_choice",
           question: "Wie lange dauert eine Schwangerschaft ungefähr?",
@@ -315,6 +465,76 @@ export const appData = {
           question: "Wie groß ist ein Baby ca. im 6. Monat der Schwangerschaft?",
           options: ["Ca. 3 cm", "Ca. 35 cm", "Ca. 50 cm"],
           correct: "Ca. 35 cm"
+        },
+        {
+          id: "qp8",
+          type: "multiple_choice",
+          question: "Was kann das Ungeborene im 6. Monat bereits?",
+          options: ["Laufen", "Die Augen öffnen und hören", "Sprechen"],
+          correct: "Die Augen öffnen und hören"
+        },
+        {
+          id: "qp9",
+          type: "multiple_choice",
+          question: "Wie groß ist das Ungeborene im 2. Monat?",
+          options: ["Ca. 3 cm", "Ca. 12 cm", "Ca. 35 cm"],
+          correct: "Ca. 3 cm"
+        },
+        {
+          id: "qp10",
+          type: "multiple_choice",
+          question: "Im 3. Monat ist das Ungeborene ca. 12 cm. Wie sieht es aus?",
+          options: ["Wie ein Fisch", "Wie ein kleiner Mensch", "Wie ein Ball"],
+          correct: "Wie ein kleiner Mensch"
+        },
+        {
+          id: "qp11",
+          type: "multiple_choice",
+          question: "Wie bewegt sich die Samenzelle fort?",
+          options: ["Sie fliegt", "Sie wedelt mit dem Schwanz", "Sie rollt"],
+          correct: "Sie wedelt mit dem Schwanz"
+        },
+        {
+          id: "qp12",
+          type: "multiple_choice",
+          question: "Kann man eine Samenzelle ohne Mikroskop sehen?",
+          options: ["Ja, leicht", "Nein, dafür braucht man ein Mikroskop"],
+          correct: "Nein, dafür braucht man ein Mikroskop"
+        },
+        {
+          id: "qp13",
+          type: "multiple_choice",
+          question: "Was passiert bei der Zeugung?",
+          options: ["Die Eizelle wird von der Samenzelle befruchtet", "Das Baby wird geboren", "Die Mutter isst mehr"],
+          correct: "Die Eizelle wird von der Samenzelle befruchtet"
+        },
+        {
+          id: "qp14",
+          type: "multiple_choice",
+          question: "Wie groß ist das Baby ungefähr bei der Geburt (9. Monat)?",
+          options: ["Ca. 12 cm", "Ca. 35 cm", "Ca. 50 cm"],
+          correct: "Ca. 50 cm"
+        },
+        {
+          id: "qp15",
+          type: "multiple_choice",
+          question: "Was wächst bei beiden Geschlechtern in der Pubertät?",
+          options: ["Achselhaare und Schamhaare", "Flügel", "Schwimmhäute"],
+          correct: "Achselhaare und Schamhaare"
+        },
+        {
+          id: "qp16",
+          type: "multiple_choice",
+          question: "Was kann man bei einem fünf Monate alten Embryo schon erkennen?",
+          options: ["Gar nichts", "Arme, Beine, Kopf und Körper", "Nur den Kopf"],
+          correct: "Arme, Beine, Kopf und Körper"
+        },
+        {
+          id: "qp17",
+          type: "multiple_choice",
+          question: "Im 2. Monat fängt das Ungeborene an, erste Bewegungen zu machen. Womit?",
+          options: ["Mit den Augen", "Mit Armen und Beinen", "Mit dem Mund"],
+          correct: "Mit Armen und Beinen"
         }
       ]
     },
@@ -354,7 +574,7 @@ export const appData = {
         {
           id: "q_at1b",
           type: "multiple_choice",
-          question: "Der höchste Berg Österreichs liegt in den...",
+          question: "Der höchste Berg Österreichs liegt in den…",
           options: ["Nördlichen Kalkalpen", "Hohen Tauern", "Schieferalpen"],
           correct: "Hohen Tauern"
         },
@@ -378,6 +598,55 @@ export const appData = {
           question: "Was ist typisch für die höheren Alpenbereiche?",
           options: ["Palmen und Sandstrände", "Nadelwälder, Hochalmen und schroffe Felsspitzen"],
           correct: "Nadelwälder, Hochalmen und schroffe Felsspitzen"
+        },
+        {
+          id: "q_at5",
+          type: "multiple_choice",
+          question: "Welche Berge gehören zu den Zentralalpen?",
+          options: ["Auerberg und Buchberg", "Großglockner, Großes Wiesbachhorn, Dreiherrnspitze", "Hohenpeißenberg"],
+          correct: "Großglockner, Großes Wiesbachhorn, Dreiherrnspitze"
+        },
+        {
+          id: "q_at6",
+          type: "multiple_choice",
+          question: "Was gibt es auf dem Hohenpeißenberg Besonderes?",
+          options: ["Einen Vergnügungspark", "Eine Sternwarte", "Ein Schwimmbad"],
+          correct: "Eine Sternwarte"
+        },
+        {
+          id: "q_at7",
+          type: "multiple_choice",
+          question: "Wie ist die Bergluft in höheren Lagen?",
+          options: ["Warm und trocken", "Kühl, mit vielen Niederschlägen", "Heiß und schwül"],
+          correct: "Kühl, mit vielen Niederschlägen"
+        },
+        {
+          id: "q_at8",
+          type: "multiple_choice",
+          question: "Welche Sportarten sind für den Tourismus in den Alpen besonders wichtig?",
+          options: ["Surfen und Segeln", "Skifahren, Bergwandern und Klettern", "Fußball und Tennis"],
+          correct: "Skifahren, Bergwandern und Klettern"
+        },
+        {
+          id: "q_at9",
+          type: "multiple_choice",
+          question: "Was findet man im Alpenvorland häufig?",
+          options: ["Wüsten", "Agrarwirtschaft (Bauernhöfe)", "Hochhäuser"],
+          correct: "Agrarwirtschaft (Bauernhöfe)"
+        },
+        {
+          id: "q_at10",
+          type: "multiple_choice",
+          question: "Aus wie vielen Bundesländern besteht Österreich?",
+          options: ["5", "9", "16"],
+          correct: "9"
+        },
+        {
+          id: "q_at11",
+          type: "multiple_choice",
+          question: "Was gibt es in den Tälern der Alpen?",
+          options: ["Steilwände und Gletscher", "Hügeliges Alpenvorland mit Wiesen", "Nur Felsen"],
+          correct: "Hügeliges Alpenvorland mit Wiesen"
         }
       ]
     },
@@ -428,6 +697,27 @@ export const appData = {
           question: "In welcher Farbe werden die Schieferalpen auf Arbeitsblättern oft markiert?",
           options: ["Hellgrün", "Dunkel lila / violett", "Orange"],
           correct: "Dunkel lila / violett"
+        },
+        {
+          id: "q_szbg5",
+          type: "multiple_choice",
+          question: "Nenne drei Berge der Schieferalpen!",
+          options: ["Schuhberg, Wandberg, Hundstein", "Großglockner, Wiesbachhorn, Dreiherrnspitze", "Auerberg, Buchberg, Hohenpeißenberg"],
+          correct: "Schuhberg, Wandberg, Hundstein"
+        },
+        {
+          id: "q_szbg6",
+          type: "multiple_choice",
+          question: "Was ist typisch für die Nördlichen Kalkalpen?",
+          options: ["Weiche, runde Hügel", "Schroffe Klippen und helle Felsen", "Flache Ebenen"],
+          correct: "Schroffe Klippen und helle Felsen"
+        },
+        {
+          id: "q_szbg7",
+          type: "multiple_choice",
+          question: "Wie hoch ist der Hundstein ungefähr?",
+          options: ["1200 m", "2117 m", "3798 m"],
+          correct: "2117 m"
         }
       ]
     },
@@ -471,6 +761,41 @@ export const appData = {
           question: "Welche zwei Orte sind die wichtigsten Bahnknotenpunkte in Salzburg?",
           options: ["St. Koloman und Abtenau", "Stadt Salzburg und Bischofshofen", "Hallein und Oberndorf"],
           correct: "Stadt Salzburg und Bischofshofen"
+        },
+        {
+          id: "q_sv4",
+          type: "multiple_choice",
+          question: "In welche Richtung führt die A10 (Tauernautobahn)?",
+          options: ["Nach Norden", "Nach Süden", "Nach Westen"],
+          correct: "Nach Süden"
+        },
+        {
+          id: "q_sv5",
+          type: "multiple_choice",
+          question: "In welche Richtung führt die A1 (Westautobahn)?",
+          options: ["Richtung Süden", "Richtung Osten und Deutschland", "Richtung Italien"],
+          correct: "Richtung Osten und Deutschland"
+        },
+        {
+          id: "q_sv6",
+          type: "multiple_choice",
+          question: "Welche wichtigen Bahnlinien gibt es in Salzburg?",
+          options: ["Westbahnstrecke und Tauernbahn", "U-Bahn und Straßenbahn", "Nur Buslinien"],
+          correct: "Westbahnstrecke und Tauernbahn"
+        },
+        {
+          id: "q_sv7",
+          type: "multiple_choice",
+          question: "Welche Nummer hat die Tauernautobahn?",
+          options: ["A1", "A10", "A2"],
+          correct: "A10"
+        },
+        {
+          id: "q_sv8",
+          type: "multiple_choice",
+          question: "Welche Nummer hat die Westautobahn?",
+          options: ["A10", "A2", "A1"],
+          correct: "A1"
         }
       ]
     }
