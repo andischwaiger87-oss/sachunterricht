@@ -17,11 +17,11 @@ function Dashboard({ topics, onSelectTopic, mode }) {
       {/* Hero */}
       <section className="hero-section">
         <h1>
-          {mode === 'lernen' ? 'Entdecke deine Themenwelten!' : 'Bereit für das Quiz?'}
+          {mode === 'lernen' ? 'Mach dich schlau für den Sachunterricht!' : 'Bereit für das Quiz?'}
         </h1>
         <p>
           {mode === 'lernen'
-            ? 'Wähle ein Thema und starte deine Lernreise durch die Wunder des Sachunterrichts.'
+            ? 'Wähle ein Kapitel und trainiere alles, was du für den Sachunterrichts-Test wissen musst.'
             : 'Teste dein Wissen und beantworte spannende Fragen zu jedem Thema!'}
         </p>
         <div className="hero-bg-icon">
